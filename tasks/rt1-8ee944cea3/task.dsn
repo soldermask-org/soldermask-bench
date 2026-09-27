@@ -1,0 +1,230 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  48415.8 22843.2  48721.4 22774.2  49015.3 22666  49292.7 22520.3
+            49548.6 22339.6  49778.8 22127.1  49979.2 21886.4  50146.6 21621.5
+            50277.9 21337.1  50371 21038  50424.2 20729.3  50436.7 20416.2
+            50425 20260  50425 2480  50432.9 2327.77  50413.7 2023.54  50354.9 1724.43
+            50257.6 1435.55  50123.3 1161.85  49954.6 908.003  49754.1 678.361
+            49525.4 476.851  49272.3 306.92  48999.2 171.477  48710.8 72.838
+            48411.9 12.692  48260 0  2540 0  2386.5 2.317  2081.73 39.322
+            1783.65 112.793  1496.6 221.657  1224.76 364.329  972.102 538.727
+            742.307 742.307  538.727 972.102  364.329 1224.76  221.657 1496.6
+            112.793 1783.65  39.322 2081.73  2.317 2386.5  0 2540  0 8890
+            508 9398  508 13462  0 13970  0 20320  2.317 20473.5  39.322 20778.3
+            112.793 21076.3  221.657 21363.4  364.329 21635.2  538.727 21887.9
+            742.307 22117.7  972.102 22321.3  1224.76 22495.7  1496.6 22638.3
+            1783.65 22747.2  2081.73 22820.7  2386.5 22857.7  2540 22860
+            48260 22860  48415.8 22843.2)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component 1X16_ROUND
+      (place JP2 25400 1270 front 180)
+    )
+    (component dummyfp3
+      (place UNK_HOLE_3 2286 21018.5 front 0)
+      (place UNK_HOLE_0 48260 1841.5 front 0)
+      (place UNK_HOLE_2 2413 1841.5 front 0)
+      (place UNK_HOLE_1 48133 21018.5 front 0)
+    )
+    (component "RHT03_DHT-22"
+      (place DHT22 44680 11350 front -90)
+    )
+    (component "AXIAL-0.3"
+      (place R2_100 22000 8000 front 180 (PN 100))
+      (place R1_200 22010 12000 front 180 (PN " "))
+    )
+    (component "AXIAL-0.3::1"
+      (place R4_10K0 11020 8010 front 0 (PN 10k))
+      (place R3_10K0 11020 12000 front 0 (PN 10k))
+    )
+    (component 1X02
+      (place PLANT0 3330 9940 front 90)
+    )
+    (component 1X12_ROUND
+      (place JP4 30480 21590 front 0)
+    )
+  )
+  (library
+    (image 1X16_ROUND
+      (outline (path signal 203.2  -20320 635  -20320 -635))
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 1 -19050 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 2 -16510 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 3 -13970 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 4 -11430 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 5 -8890 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 6 -6350 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 7 -3810 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 8 -1270 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 9 1270 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 10 3810 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 11 6350 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 12 8890 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 13 11430 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 14 13970 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 15 16510 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 16 19050 0)
+    )
+    (image dummyfp3
+      (keepout "" (circle F.Cu 2700))
+      (keepout "" (circle B.Cu 2700))
+    )
+    (image "RHT03_DHT-22"
+      (outline (path signal 127  -7550 -5200  7550 -5200))
+      (outline (path signal 127  -7550 800  -7550 -5200))
+      (outline (path signal 127  -7550 800  7550 800))
+      (outline (path signal 127  7550 800  7550 -5200))
+      (outline (path signal 127  -7550 2500  -7550 800))
+      (outline (path signal 127  -7550 2500  7550 2500))
+      (outline (path signal 127  7550 2500  7550 800))
+      (pin Round[A]Pad_1308.000000_um DATA -1270 0)
+      (pin Round[A]Pad_1308.000000_um GND 3810 0)
+      (pin Round[A]Pad_1308.000000_um NULL 1270 0)
+      (pin RoundRect[A]Pad_1308.000000x1308.000000_328.244000_um_0.292893_F VDD -3810 0)
+    )
+    (image "AXIAL-0.3"
+      (outline (path signal 203.2  2540 -762  -2540 -762))
+      (outline (path signal 203.2  2540 0  2794 0))
+      (outline (path signal 203.2  2540 0  2540 -762))
+      (outline (path signal 203.2  2540 762  2540 0))
+      (outline (path signal 203.2  -2540 -762  -2540 0))
+      (outline (path signal 203.2  -2540 0  -2540 762))
+      (outline (path signal 203.2  -2540 0  -2794 0))
+      (outline (path signal 203.2  -2540 762  2540 762))
+      (pin Round[A]Pad_1879.600000_um P$1 -3810 0)
+      (pin Round[A]Pad_1879.600000_um P$2 3810 0)
+    )
+    (image "AXIAL-0.3::1"
+      (outline (path signal 203.2  -2540 762  2540 762))
+      (outline (path signal 203.2  -2540 0  -2794 0))
+      (outline (path signal 203.2  -2540 0  -2540 762))
+      (outline (path signal 203.2  -2540 -762  -2540 0))
+      (outline (path signal 203.2  2540 762  2540 0))
+      (outline (path signal 203.2  2540 0  2540 -762))
+      (outline (path signal 203.2  2540 0  2794 0))
+      (outline (path signal 203.2  2540 -762  -2540 -762))
+      (pin Round[A]Pad_1879.600000_um P$1 -3810 0)
+      (pin Round[A]Pad_1879.600000_um P$2 3810 0)
+    )
+    (image 1X02
+      (outline (path signal 203.2  3175 1270  3810 635))
+      (outline (path signal 203.2  1905 1270  3175 1270))
+      (outline (path signal 203.2  635 1270  1270 635))
+      (outline (path signal 203.2  -635 1270  635 1270))
+      (outline (path signal 203.2  -635 1270  -1270 635))
+      (outline (path signal 203.2  3810 635  3810 -635))
+      (outline (path signal 203.2  1270 635  1905 1270))
+      (outline (path signal 203.2  -1270 635  -1270 -635))
+      (outline (path signal 203.2  3810 -635  3175 -1270))
+      (outline (path signal 203.2  1270 -635  635 -1270))
+      (outline (path signal 203.2  -1270 -635  -635 -1270))
+      (outline (path signal 203.2  3175 -1270  1905 -1270))
+      (outline (path signal 203.2  1905 -1270  1270 -635))
+      (outline (path signal 203.2  635 -1270  -635 -1270))
+      (pin Round[A]Pad_1879.600000_um (rotate 90) 1 0 0)
+      (pin Round[A]Pad_1879.600000_um (rotate 90) 2 2540 0)
+    )
+    (image 1X12_ROUND
+      (outline (path signal 203.2  -15240 635  -15240 -635))
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 1 -13970 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 2 -11430 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 3 -8890 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 4 -6350 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 5 -3810 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 6 -1270 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 7 1270 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 8 3810 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 9 6350 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 10 8890 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 11 11430 0)
+      (pin Round[A]Pad_1676.400000_um (rotate 90) 12 13970 0)
+    )
+    (padstack Round[A]Pad_1308.000000_um
+      (shape (circle F.Cu 1308))
+      (shape (circle B.Cu 1308))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1676.400000_um
+      (shape (circle F.Cu 1676.4))
+      (shape (circle B.Cu 1676.4))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1879.600000_um
+      (shape (circle F.Cu 1879.6))
+      (shape (circle B.Cu 1879.6))
+      (attach off)
+    )
+    (padstack RoundRect[A]Pad_1308.000000x1308.000000_328.244000_um_0.292893_F
+      (shape (polygon F.Cu 0  -655.244 271.411  -271.411 655.244  271.411 655.244  655.244 271.411
+            655.244 -271.411  271.411 -655.244  -271.411 -655.244  -655.244 -271.411
+            -655.244 271.411))
+      (shape (polygon B.Cu 0  -655.244 271.411  -271.411 655.244  271.411 655.244  655.244 271.411
+            655.244 -271.411  271.411 -655.244  -271.411 -655.244  -655.244 -271.411
+            -655.244 271.411))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net N$2
+      (pins JP2-4 DHT22-DATA R4_10K0-P$2)
+    )
+    (net N$1
+      (pins JP2-5 PLANT0-2)
+    )
+    (net N$3
+      (pins JP2-12 R2_100-P$2 R1_200-P$1)
+    )
+    (net N$6
+      (pins JP2-13 DHT22-GND R2_100-P$1 R3_10K0-P$2)
+    )
+    (net N$4
+      (pins JP2-15 DHT22-VDD R4_10K0-P$1)
+    )
+    (net N$5
+      (pins R3_10K0-P$1 PLANT0-1 R1_200-P$2)
+    )
+    (class kicad_default N$1 N$2 N$3 N$4 N$5 N$6
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

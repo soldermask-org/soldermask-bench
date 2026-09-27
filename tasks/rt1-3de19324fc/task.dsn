@@ -1,0 +1,181 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  6352.42 30369.1  6390.93 30150.7  6466.79 29942.2  6577.69 29750.2
+            6720.26 29580.3  6890.17 29437.7  7082.25 29326.8  7290.67 29250.9
+            7509.1 29212.4  7730.9 29212.4  7949.33 29250.9  8157.75 29326.8
+            8349.83 29437.7  8519.74 29580.3  8662.31 29750.2  8773.21 29942.2
+            8849.07 30150.7  8887.58 30369.1  8890 30480  14732 30480  15240 29972
+            15240 508  14732 0  508 0  0 508  0 29972  508 30480  6350 30480
+            6352.42 30369.1)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component "ICSP-HEADER"
+      (place ISP1 7620 15240 front 180 (PN "ICSP-HEADER-6"))
+    )
+    (component 1X01
+      (place J1 1270 29210 back 0 (PN "PINHD-1X1"))
+    )
+    (component 1X02
+      (place J2 1270 12700 back 90 (PN "PINHD-1X2"))
+    )
+    (component 1X03
+      (place J3 13970 3810 back 270 (PN "PINHD-1X3"))
+    )
+  )
+  (library
+    (image "ICSP-HEADER"
+      (outline (path signal 127  2540 -3048  1778 -3810))
+      (outline (path signal 127  2540 -1778  2540 -3048))
+      (outline (path signal 127  2540 -762  2032 -1270))
+      (outline (path signal 127  2540 762  2540 -762))
+      (outline (path signal 127  2540 1778  2032 1270))
+      (outline (path signal 127  2540 3048  2540 1778))
+      (outline (path signal 127  2032 -1270  2540 -1778))
+      (outline (path signal 127  2032 1270  2540 762))
+      (outline (path signal 127  1778 -3810  -1778 -3810))
+      (outline (path signal 127  1778 3810  2540 3048))
+      (outline (path signal 127  -1778 -3810  -2540 -3048))
+      (outline (path signal 127  -1778 3810  1778 3810))
+      (outline (path signal 127  -2032 -1270  -2540 -762))
+      (outline (path signal 127  -2032 1270  -2540 1778))
+      (outline (path signal 127  -2540 -3048  -2540 -1778))
+      (outline (path signal 127  -2540 -1778  -2032 -1270))
+      (outline (path signal 127  -2540 -762  -2540 762))
+      (outline (path signal 127  -2540 762  -2032 1270))
+      (outline (path signal 127  -2540 1778  -2540 3048))
+      (outline (path signal 127  -2540 3048  -1778 3810))
+      (pin Round[A]Pad_1700.000000_um 1 -1270 2540)
+      (pin Round[A]Pad_1700.000000_um 2 1270 2540)
+      (pin Round[A]Pad_1700.000000_um 3 -1270 0)
+      (pin Round[A]Pad_1700.000000_um 4 1270 0)
+      (pin Round[A]Pad_1700.000000_um 5 -1270 -2540)
+      (pin Round[A]Pad_1700.000000_um 6 1270 -2540)
+    )
+    (image 1X01
+      (outline (path signal 152.4  1270 635  1270 -635))
+      (outline (path signal 152.4  1270 -635  635 -1270))
+      (outline (path signal 152.4  635 1270  1270 635))
+      (outline (path signal 152.4  635 -1270  -635 -1270))
+      (outline (path signal 152.4  -635 1270  635 1270))
+      (outline (path signal 152.4  -635 1270  -1270 635))
+      (outline (path signal 152.4  -1270 635  -1270 -635))
+      (outline (path signal 152.4  -1270 -635  -635 -1270))
+      (pin Round[A]Pad_1700.000000_um (rotate 90) 1 0 0)
+    )
+    (image 1X02
+      (outline (path signal 152.4  -1905 1270  -635 1270))
+      (outline (path signal 152.4  -1905 1270  -2540 635))
+      (outline (path signal 152.4  -635 1270  0 635))
+      (outline (path signal 152.4  635 1270  1905 1270))
+      (outline (path signal 152.4  1905 1270  2540 635))
+      (outline (path signal 152.4  -2540 635  -2540 -635))
+      (outline (path signal 152.4  0 635  635 1270))
+      (outline (path signal 152.4  0 635  0 -635))
+      (outline (path signal 152.4  2540 635  2540 -635))
+      (outline (path signal 152.4  -2540 -635  -1905 -1270))
+      (outline (path signal 152.4  0 -635  -635 -1270))
+      (outline (path signal 152.4  2540 -635  1905 -1270))
+      (outline (path signal 152.4  -635 -1270  -1905 -1270))
+      (outline (path signal 152.4  635 -1270  0 -635))
+      (outline (path signal 152.4  1905 -1270  635 -1270))
+      (pin Round[A]Pad_1700.000000_um (rotate 90) 1 -1270 0)
+      (pin Round[A]Pad_1700.000000_um (rotate 90) 2 1270 0)
+    )
+    (image 1X03
+      (outline (path signal 152.4  3175 -1270  1905 -1270))
+      (outline (path signal 152.4  1905 -1270  1270 -635))
+      (outline (path signal 152.4  635 -1270  -635 -1270))
+      (outline (path signal 152.4  -635 -1270  -1270 -635))
+      (outline (path signal 152.4  -1905 -1270  -3175 -1270))
+      (outline (path signal 152.4  3810 -635  3175 -1270))
+      (outline (path signal 152.4  1270 -635  635 -1270))
+      (outline (path signal 152.4  -1270 -635  -1905 -1270))
+      (outline (path signal 152.4  -3810 -635  -3175 -1270))
+      (outline (path signal 152.4  3810 635  3810 -635))
+      (outline (path signal 152.4  1270 635  1270 -635))
+      (outline (path signal 152.4  1270 635  1905 1270))
+      (outline (path signal 152.4  -1270 635  -1270 -635))
+      (outline (path signal 152.4  -1270 635  -635 1270))
+      (outline (path signal 152.4  -3810 635  -3810 -635))
+      (outline (path signal 152.4  3175 1270  3810 635))
+      (outline (path signal 152.4  1905 1270  3175 1270))
+      (outline (path signal 152.4  635 1270  1270 635))
+      (outline (path signal 152.4  -635 1270  635 1270))
+      (outline (path signal 152.4  -1905 1270  -1270 635))
+      (outline (path signal 152.4  -3175 1270  -3810 635))
+      (outline (path signal 152.4  -3175 1270  -1905 1270))
+      (pin Round[A]Pad_1700.000000_um (rotate 90) 1 -2540 0)
+      (pin Round[A]Pad_1700.000000_um (rotate 90) 2 0 0)
+      (pin Round[A]Pad_1700.000000_um (rotate 90) 3 2540 0)
+    )
+    (padstack Round[A]Pad_1700.000000_um
+      (shape (circle F.Cu 1700))
+      (shape (circle B.Cu 1700))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net N$5
+      (pins ISP1-1 J3-2)
+    )
+    (net N$2
+      (pins ISP1-2 J2-1)
+    )
+    (net N$6
+      (pins ISP1-3 J3-3)
+    )
+    (net N$4
+      (pins ISP1-4 J3-1)
+    )
+    (net N$1
+      (pins ISP1-5 J1-1)
+    )
+    (net GND
+      (pins ISP1-6 J2-2)
+    )
+    (class kicad_default GND N$1 N$2 N$4 N$5 N$6
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

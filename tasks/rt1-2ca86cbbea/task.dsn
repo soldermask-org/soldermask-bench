@@ -1,0 +1,367 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer "Top Layer"
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer "Bottom Layer"
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  182918 -126149  114084 -126149  114084 -83858.1  182918 -83858.1
+            182918 -126149)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component "Miscellaneous Devices:AXIAL-0.3"
+      (place R3 173012.1 -116624.1 front 0 (PN Res1))
+      (place R2 173520.1 -96812.1 front 0 (PN Res1))
+    )
+    (component "LTV-817:LTV-817"
+      (place J1 162598.1 -95415.1 front 180 (PN "LTV-817"))
+      (place J3 162725.1 -115481.1 front 180 (PN "LTV-817"))
+    )
+    (component SnapEDApcb:0603
+      (place D 172543.1 -93891.1 front 180 (PN "LTST-C193TBKT-5A"))
+    )
+    (component "RELAY_SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C"
+      (place K2 135674.1 -115989.1 front 180 (PN "SRD-05VDC-SL-C"))
+      (place K1 135674.1 -95161.1 front 180 (PN "SRD-05VDC-SL-C"))
+    )
+    (component "Miscellaneous Connectors:HDR1X4"
+      (place P1 180505.1 -100749.1 front 90 (PN "Header 4"))
+    )
+    (component "SOT23-BEC:SOT23-BEC"
+      (place Q2 154597.1 -110274.1 front 90 (PN BCW31*))
+      (place Q1 154470.1 -89827.1 front 90 (PN BCW31*))
+    )
+    (component SnapEDApcb:0603::1
+      (place D2 171361.1 -114211.1 front 180 (PN "LTST-C193TBKT-5A"))
+    )
+    (component "Miscellaneous Devices:AXIAL-0.3::1"
+      (place R1 162471.1 -90589.1 front 180 (PN Res1))
+      (place R4 162217.1 -109004.1 front 180 (PN Res1))
+    )
+    (component "CUI_TB006 -508-03BE:CUI_TB006 -508-03BE"
+      (place J4 119926.1 -121069.1 front 90 (PN "TB006_-508-03BE"))
+      (place J2 119799.1 -99860.1 front 90 (PN "TB006_-508-03BE"))
+    )
+    (component "Miscellaneous Connectors:HDR1X3"
+      (place P2 180759.1 -109766.1 front -90 (PN "Header 3"))
+    )
+    (component "Miscellaneous Devices:DO-41"
+      (place D1 148755.1 -94780.1 front -90 (PN "Diode 1N4004"))
+    )
+    (component "Miscellaneous Devices:DO-41::1"
+      (place D3 148755.1 -115354.1 front -90 (PN "Diode 1N4004"))
+    )
+  )
+  (library
+    (image "Miscellaneous Devices:AXIAL-0.3"
+      (outline (path signal 200  -2768.6 0  -2540 0))
+      (outline (path signal 200  -2540 762  2540 762))
+      (outline (path signal 200  -2540 -762  -2540 762))
+      (outline (path signal 200  -2540 -762  2540 -762))
+      (outline (path signal 200  2540 0  2540 762))
+      (outline (path signal 200  2540 0  2768.6 0))
+      (outline (path signal 200  2540 -762  2540 0))
+      (pin Round[A]Pad_1400.000000_um 1 -3810 0)
+      (pin Round[A]Pad_1400.000000_um 2 3810 0)
+    )
+    (image "LTV-817:LTV-817"
+      (outline (path signal 127  2540 -2540  -2540 -2540))
+      (outline (path signal 127  2540 2540  2540 -2540))
+      (outline (path signal 127  2540 2540  -2540 2540))
+      (outline (path signal 127  -2540 2540  -2540 -2540))
+      (outline (path signal 406.4  -3040 2540  -3021.46 2674.9  -2967.21 2799.79  -2881.28 2905.42
+            -2770.03 2983.94  -2641.73 3029.54  -2505.88 3038.83  -2372.56 3011.13
+            -2251.66 2948.49  -2152.14 2855.54  -2081.39 2739.2  -2044.66 2608.08
+            -2044.66 2471.92  -2081.39 2340.8  -2152.14 2224.46  -2251.66 2131.51
+            -2372.56 2068.87  -2505.88 2041.17  -2641.73 2050.46  -2770.03 2096.06
+            -2881.28 2174.58  -2967.21 2280.21  -3021.46 2405.1  -3040 2540))
+      (pin Rect[A]Pad_1108.000000x1108.000000_um (rotate 270) 1 -3810 1270)
+      (pin Rect[A]Pad_1108.000000x1108.000000_um (rotate 270) 2 -3810 -1270)
+      (pin Rect[A]Pad_1108.000000x1108.000000_um (rotate 270) 3 3810 -1270)
+      (pin Rect[A]Pad_1108.000000x1108.000000_um (rotate 270) 4 3810 1270)
+    )
+    (image SnapEDApcb:0603
+      (outline (path signal 101.6  355.99 -419  -356.02 -419))
+      (outline (path signal 101.6  355.99 432  -356.02 432))
+      (pin Rect[T]Pad_1100.000000x1000.000000_um 1 -850 0)
+      (pin Rect[T]Pad_1100.000000x1000.000000_um 2 850.02 0)
+    )
+    (image "RELAY_SRD-05VDC-SL-C:RELAY_SRD-05VDC-SL-C"
+      (outline (path signal 127  9549.99 -7750  -9549.99 -7750))
+      (outline (path signal 127  9549.99 7750  9549.99 -7750))
+      (outline (path signal 127  9549.99 7750  -9549.99 7750))
+      (outline (path signal 127  -9549.99 7750  -9549.99 -7750))
+      (outline (path signal 300  -10300 6119  -10284.1 6173.06  -10241.5 6209.96  -10185.8 6217.98
+            -10134.5 6194.57  -10104.1 6147.17  -10104.1 6090.83  -10134.5 6043.43
+            -10185.8 6020.02  -10241.5 6028.04  -10284.1 6064.94  -10300 6119))
+      (outline (path signal 127  9549.99 -7750  -9549.99 -7750))
+      (outline (path signal 127  9549.99 7750  9549.99 -7750))
+      (outline (path signal 127  9549.99 7750  -9549.99 7750))
+      (outline (path signal 127  -9549.99 7750  -9549.99 -7750))
+      (outline (path signal 50  9799.98 -7999.98  -9799.98 -7999.98))
+      (outline (path signal 50  9799.98 7999.98  9799.98 -7999.98))
+      (outline (path signal 50  9799.98 7999.98  -9799.98 7999.98))
+      (outline (path signal 50  -9799.98 7999.98  -9799.98 -7999.98))
+      (pin Rect[A]Pad_1980.000000x1980.000000_um A1 -6100.01 5999.99)
+      (pin Round[A]Pad_1980.000000_um A2 -6100.01 -5999.99)
+      (pin Round[A]Pad_1935.000000_um COM -8100.01 0)
+      (pin Round[A]Pad_1980.000000_um NC 6100.01 5999.99)
+      (pin Round[A]Pad_1980.000000_um NO 6100.01 -5999.99)
+    )
+    (image "Miscellaneous Connectors:HDR1X4"
+      (outline (path signal 200  8890 1270  8890 -1270))
+      (outline (path signal 200  -1270 1270  8890 1270))
+      (outline (path signal 200  -1270 1270  -1270 -1270))
+      (outline (path signal 200  -1270 -1270  8890 -1270))
+      (pin Rect[A]Pad_1500.000000x1500.000000_um 1 0 0)
+      (pin Round[A]Pad_1500.000000_um 2 2540 0)
+      (pin Round[A]Pad_1500.000000_um 3 5080 0)
+      (pin Round[A]Pad_1500.000000_um 4 7620 0)
+    )
+    (image "SOT23-BEC:SOT23-BEC"
+      (outline (path signal 127  1422.4 660.4  1422.4 -660.4))
+      (outline (path signal 127  -1422.4 660.4  1422.4 660.4))
+      (outline (path signal 127  -1422.4 660.4  -1422.4 -660.4))
+      (outline (path signal 127  -1422.4 -660.4  1422.4 -660.4))
+      (pin Rect[T]Pad_1000.000000x1400.000000_um B -950.01 -1100.02)
+      (pin Rect[T]Pad_1000.000000x1400.000000_um C 0 1100.02)
+      (pin Rect[T]Pad_1000.000000x1400.000000_um E 950.01 -1100.02)
+    )
+    (image SnapEDApcb:0603::1
+      (outline (path signal 101.6  356.01 -419  -356.01 -419))
+      (outline (path signal 101.6  356.01 432  -356.01 432))
+      (pin Rect[T]Pad_1100.000000x1000.000000_um 1 -849.99 0)
+      (pin Rect[T]Pad_1100.000000x1000.000000_um 2 849.99 0)
+    )
+    (image "Miscellaneous Devices:AXIAL-0.3::1"
+      (outline (path signal 200  2768.6 0  2540 0))
+      (outline (path signal 200  2540 -762  -2540 -762))
+      (outline (path signal 200  2540 0  2540 -762))
+      (outline (path signal 200  2540 762  2540 0))
+      (outline (path signal 200  2540 762  -2540 762))
+      (outline (path signal 200  -2540 0  -2768.6 0))
+      (outline (path signal 200  -2540 762  -2540 -762))
+      (pin Round[A]Pad_1400.000000_um 1 -3810 0)
+      (pin Round[A]Pad_1400.000000_um 2 3810 0)
+    )
+    (image "CUI_TB006 -508-03BE:CUI_TB006 -508-03BE"
+      (outline (path signal 127  12700 4100.02  12700 -4100.02))
+      (outline (path signal 127  -2540 4100.02  12700 4100.02))
+      (outline (path signal 127  -2540 4100.02  -2540 -4100.02))
+      (outline (path signal 127  -2540 -4100.02  12700 -4100.02))
+      (outline (path signal 200  0 5000  -54.064 5015.88  -90.963 5058.46  -98.982 5114.23
+            -75.575 5165.49  -28.173 5195.95  28.173 5195.95  75.575 5165.49
+            98.982 5114.23  90.963 5058.46  54.064 5015.88  0 5000))
+      (outline (path signal 127  12700 4100.02  12700 -4100.02))
+      (outline (path signal 127  -2540 4100.02  12700 4100.02))
+      (outline (path signal 127  -2540 4100.02  -2540 -4100.02))
+      (outline (path signal 127  -2540 -4100.02  12700 -4100.02))
+      (outline (path signal 200  0 5000  -54.064 5015.88  -90.963 5058.46  -98.982 5114.23
+            -75.575 5165.49  -28.173 5195.95  28.173 5195.95  75.575 5165.49
+            98.982 5114.23  90.963 5058.46  54.064 5015.88  0 5000))
+      (outline (path signal 50  12950 4350  12950 -4350))
+      (outline (path signal 50  -2789.99 4350  12950 4350))
+      (outline (path signal 50  -2789.99 4350  -2789.99 -4350))
+      (outline (path signal 50  -2789.99 -4350  12950 -4350))
+      (pin Rect[A]Pad_1950.000000x1950.000000_um 1 0 0)
+      (pin Round[A]Pad_1950.000000_um 2 5080 0)
+      (pin Round[A]Pad_1950.000000_um 3 10160 0)
+    )
+    (image "Miscellaneous Connectors:HDR1X3"
+      (outline (path signal 200  -1270 -1270  -1270 1270))
+      (outline (path signal 200  6350 -1270  -1270 -1270))
+      (outline (path signal 200  6350 -1270  6350 1270))
+      (outline (path signal 200  6350 1270  -1270 1270))
+      (pin Rect[A]Pad_1500.000000x1500.000000_um 1 0 0)
+      (pin Round[A]Pad_1500.000000_um 2 2540 0)
+      (pin Round[A]Pad_1500.000000_um 3 5080 0)
+    )
+    (image "Miscellaneous Devices:DO-41"
+      (outline (path signal 200  -2649.98 -1400  -2649.98 1400))
+      (outline (path signal 200  2649.98 -1400  -2649.98 -1400))
+      (outline (path signal 200  2649.98 1400  -2649.98 1400))
+      (outline (path signal 0  1948.33 -1401.73  1948.33 1398.27  2748.33 1398.27  2748.33 -1401.73
+            1948.33 -1401.73))
+      (pin Round[A]Pad_2000.000000_um 1 -5230.01 0)
+      (pin Rect[A]Pad_2000.000000x2000.000000_um 2 5230.01 0)
+    )
+    (image "Miscellaneous Devices:DO-41::1"
+      (outline (path signal 200  -2649.98 -1400  -2649.98 1400))
+      (outline (path signal 200  2649.98 -1400  -2649.98 -1400))
+      (outline (path signal 200  2649.98 1400  -2649.98 1400))
+      (outline (path signal 0  1949.65 -1403.91  1949.65 1396.09  2749.65 1396.09  2749.65 -1403.91
+            1949.65 -1403.91))
+      (pin Round[A]Pad_2000.000000_um 1 -5230.01 0)
+      (pin Rect[A]Pad_2000.000000x2000.000000_um 2 5230.01 0)
+    )
+    (padstack Round[A]Pad_1400.000000_um
+      (shape (circle "Top Layer" 1400))
+      (shape (circle "Bottom Layer" 1400))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1500.000000_um
+      (shape (circle "Top Layer" 1500))
+      (shape (circle "Bottom Layer" 1500))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1935.000000_um
+      (shape (circle "Top Layer" 1935))
+      (shape (circle "Bottom Layer" 1935))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1950.000000_um
+      (shape (circle "Top Layer" 1950))
+      (shape (circle "Bottom Layer" 1950))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1980.000000_um
+      (shape (circle "Top Layer" 1980))
+      (shape (circle "Bottom Layer" 1980))
+      (attach off)
+    )
+    (padstack Round[A]Pad_2000.000000_um
+      (shape (circle "Top Layer" 2000))
+      (shape (circle "Bottom Layer" 2000))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2000.000000x2000.000000_um
+      (shape (rect "Top Layer" -1000 -1000 1000 1000))
+      (shape (rect "Bottom Layer" -1000 -1000 1000 1000))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1000.000000x1400.000000_um
+      (shape (rect "Top Layer" -500 -700 500 700))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1100.000000x1000.000000_um
+      (shape (rect "Top Layer" -550 -500 550 500))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1108.000000x1108.000000_um
+      (shape (rect "Top Layer" -554 -554 554 554))
+      (shape (rect "Bottom Layer" -554 -554 554 554))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1500.000000x1500.000000_um
+      (shape (rect "Top Layer" -750 -750 750 750))
+      (shape (rect "Bottom Layer" -750 -750 750 750))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1950.000000x1950.000000_um
+      (shape (rect "Top Layer" -975 -975 975 975))
+      (shape (rect "Bottom Layer" -975 -975 975 975))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1980.000000x1980.000000_um
+      (shape (rect "Top Layer" -990 -990 990 990))
+      (shape (rect "Bottom Layer" -990 -990 990 990))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle "Top Layer" 600))
+      (shape (circle "Bottom Layer" 600))
+      (attach off)
+    )
+  )
+  (network
+    (net NetJ3_1
+      (pins R3-1 J3-1)
+    )
+    (net VCC
+      (pins R3-2 P1-4 R2-2 P2-3)
+    )
+    (net NetJ1_1
+      (pins J1-1 R2-1)
+    )
+    (net NetD_2
+      (pins J1-2 D-2)
+    )
+    (net NetJ1_3
+      (pins J1-3 R1-1)
+    )
+    (net "RY VCC"
+      (pins J1-4 J3-4 K2-A1 P2-2 K1-A1 D1-2 D3-2)
+    )
+    (net IN1
+      (pins D-1 P1-3)
+    )
+    (net NetD2_2
+      (pins J3-2 D2-2)
+    )
+    (net NetJ3_3
+      (pins J3-3 R4-1)
+    )
+    (net NetD3_1
+      (pins K2-A2 Q2-C D3-1)
+    )
+    (net NetJ4_2
+      (pins K2-COM J4-2)
+    )
+    (net NetJ4_3
+      (pins K2-NC J4-3)
+    )
+    (net NetJ4_1
+      (pins K2-NO J4-1)
+    )
+    (net GND
+      (pins P1-1 Q2-E P2-1 Q1-E)
+    )
+    (net IN2
+      (pins P1-2 D2-1)
+    )
+    (net NetQ2_B
+      (pins Q2-B R4-2)
+    )
+    (net NetQ1_B
+      (pins R1-2 Q1-B)
+    )
+    (net NetD1_1
+      (pins K1-A2 Q1-C D1-1)
+    )
+    (net NetJ2_2
+      (pins K1-COM J2-2)
+    )
+    (net NetJ2_3
+      (pins K1-NC J2-3)
+    )
+    (net NetJ2_1
+      (pins K1-NO J2-1)
+    )
+    (class kicad_default GND IN1 IN2 NetD1_1 NetD2_2 NetD3_1 NetD_2 NetJ1_1
+      NetJ1_3 NetJ2_1 NetJ2_2 NetJ2_3 NetJ3_1 NetJ3_3 NetJ4_1 NetJ4_2 NetJ4_3
+      NetQ1_B NetQ2_B "RY VCC" VCC
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

@@ -1,0 +1,14 @@
+{
+ "clearance": 0.127,
+ "track_width": 0.127,
+ "via_diameter": 0.6,
+ "via_drill": 0.3,
+ "min_clearance": 0.127,
+ "min_track_width": 0.127,
+ "min_via_annular_width": 0.1,
+ "min_via_diameter": 0.4,
+ "min_through_hole_diameter": 0.2,
+ "min_copper_edge_clearance": 0.2,
+ "min_hole_clearance": 0.25,
+ "min_hole_to_hole": 0.25
+}

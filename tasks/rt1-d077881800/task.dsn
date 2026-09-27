@@ -1,0 +1,144 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  17760 0  0 0  0 12370  17760 12370  17760 0)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component 1X04
+      (place JP2 2540 6350 front -90)
+      (place JP1 15240 6350 front -90)
+    )
+    (component "ACS713-SOIC"
+      (place U$1 8890 6350 front -90 (PN ACS713SOIC))
+    )
+  )
+  (library
+    (image 1X04
+      (outline (path signal 152.4  -3175 -1270  -4445 -1270))
+      (outline (path signal 152.4  -1905 -1270  -2540 -635))
+      (outline (path signal 152.4  -635 -1270  -1905 -1270))
+      (outline (path signal 152.4  635 -1270  0 -635))
+      (outline (path signal 152.4  1905 -1270  635 -1270))
+      (outline (path signal 152.4  4445 -1270  3175 -1270))
+      (outline (path signal 152.4  -5080 -635  -4445 -1270))
+      (outline (path signal 152.4  -2540 -635  -3175 -1270))
+      (outline (path signal 152.4  0 -635  -635 -1270))
+      (outline (path signal 152.4  2540 -635  1905 -1270))
+      (outline (path signal 152.4  2540 -635  3175 -1270))
+      (outline (path signal 152.4  5080 -635  4445 -1270))
+      (outline (path signal 152.4  -5080 635  -5080 -635))
+      (outline (path signal 152.4  -2540 635  -2540 -635))
+      (outline (path signal 152.4  -2540 635  -1905 1270))
+      (outline (path signal 152.4  0 635  0 -635))
+      (outline (path signal 152.4  0 635  635 1270))
+      (outline (path signal 152.4  2540 635  2540 -635))
+      (outline (path signal 152.4  5080 635  5080 -635))
+      (outline (path signal 152.4  -4445 1270  -5080 635))
+      (outline (path signal 152.4  -4445 1270  -3175 1270))
+      (outline (path signal 152.4  -3175 1270  -2540 635))
+      (outline (path signal 152.4  -1905 1270  -635 1270))
+      (outline (path signal 152.4  -635 1270  0 635))
+      (outline (path signal 152.4  635 1270  1905 1270))
+      (outline (path signal 152.4  1905 1270  2540 635))
+      (outline (path signal 152.4  3175 1270  2540 635))
+      (outline (path signal 152.4  3175 1270  4445 1270))
+      (outline (path signal 152.4  4445 1270  5080 635))
+      (pin Round[A]Pad_1524.000000_um (rotate 90) 1 -3810 0)
+      (pin Round[A]Pad_1524.000000_um (rotate 90) 2 -1270 0)
+      (pin Round[A]Pad_1524.000000_um (rotate 90) 3 1270 0)
+      (pin Round[A]Pad_1524.000000_um (rotate 90) 4 3810 0)
+    )
+    (image "ACS713-SOIC"
+      (outline (path signal 127  -2450 -1950  -2450 1950))
+      (outline (path signal 127  2450 -1950  -2450 -1950))
+      (outline (path signal 127  -2450 1950  2450 1950))
+      (outline (path signal 127  2450 1950  2450 -1950))
+      (outline (path signal 127  -1500 -659.491  -1384.89 -676.84  -1280.02 -727.346  -1194.69 -806.522
+            -1136.48 -907.331  -1110.58 -1020.82  -1119.28 -1136.9  -1161.81 -1245.25
+            -1234.39 -1336.26  -1330.56 -1401.84  -1441.8 -1436.15  -1558.2 -1436.15
+            -1669.44 -1401.84  -1765.61 -1336.26  -1838.19 -1245.25  -1880.72 -1136.9
+            -1889.42 -1020.82  -1863.52 -907.331  -1805.31 -806.522  -1719.98 -727.346
+            -1615.11 -676.84  -1500 -659.491))
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$1 -1905 -2800)
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$2 -635 -2800)
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$3 635 -2800)
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$4 1905 -2800)
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$5 1905 2800)
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$6 635 2800)
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$7 -635 2800)
+      (pin Rect[T]Pad_1750.000000x650.000000_um (rotate 90) P$8 -1905 2800)
+    )
+    (padstack Round[A]Pad_1524.000000_um
+      (shape (circle F.Cu 1524))
+      (shape (circle B.Cu 1524))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1750.000000x650.000000_um
+      (shape (rect F.Cu -875 -325 875 325))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net N$1
+      (pins JP2-1 U$1-P$1 U$1-P$2)
+    )
+    (net N$2
+      (pins JP2-4 U$1-P$3 U$1-P$4)
+    )
+    (net N$6
+      (pins JP1-1 U$1-P$8)
+    )
+    (net N$5
+      (pins JP1-2 U$1-P$7)
+    )
+    (net N$4
+      (pins JP1-3 U$1-P$6)
+    )
+    (net N$3
+      (pins JP1-4 U$1-P$5)
+    )
+    (class kicad_default N$1 N$2 N$3 N$4 N$5 N$6
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

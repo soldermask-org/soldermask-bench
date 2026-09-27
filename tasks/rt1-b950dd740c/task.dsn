@@ -1,0 +1,209 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  194000 -69760  188000 -75760  188000 -105000  194000 -111000
+            194000 -117050  167210 -117050  167210 -63710  194000 -63710
+            194000 -69760)
+    )
+    (keepout "" (polygon signal 0  175120 -95500  179120 -95500  179120 -94500  176120 -94500
+            176120 -85500  179120 -85500  179120 -84500  175120 -84500  175120 -95500))
+    (keepout "" (polygon signal 0  182120 -85500  185120 -85500  185120 -94500  182120 -94500
+            182120 -95500  186120 -95500  186120 -84500  182120 -84500  182120 -85500))
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+      (place C1 180592.5 -93000 front 0 (PN 100n))
+    )
+    (component "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm"
+      (place U1 180620 -90000 front -90 (PN "SHT35-DIS"))
+    )
+    (component Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+      (place R1 182120 -81000 front -90 (PN 10k))
+      (place R2 179120 -81000 front -90 (PN 10k))
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place J1 186484 -114645 back 90 (PN Conn_01x03))
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (place J2 172260 -66385 back 270 (PN Conn_01x02))
+    )
+  )
+  (library
+    (image Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+      (outline (polygon signal 0  1875 -975  -1875 -975  -1875 975  1875 975))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 100  -1000 625  1000 625))
+      (outline (path signal 100  -1000 -625  -1000 625))
+      (outline (path signal 100  1000 625  1000 -625))
+      (outline (path signal 100  1000 -625  -1000 -625))
+      (pin RoundRect[T]Pad_1175.000000x1450.000000_250.951000_um_0.000000_0 1 -1037.5 0)
+      (pin RoundRect[T]Pad_1175.000000x1450.000000_250.951000_um_0.000000_0 2 1037.5 0)
+    )
+    (image "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm"
+      (outline (polygon signal 0  1695 1495  1695 -1495  -1695 -1495  -1695 1495))
+      (outline (path signal 120  -1250 -1360  1250 -1360))
+      (outline (path signal 120  -1250 1360  1250 1360))
+      (outline (path signal 100  -1250 -1250  -1250 750))
+      (outline (path signal 100  1250 -1250  -1250 -1250))
+      (outline (path signal 100  -1250 750  -750 1250))
+      (outline (path signal 100  -750 1250  1250 1250))
+      (outline (path signal 100  1250 1250  1250 -1250))
+      (pin Rect[T]Pad_550.000000x250.000000_um 1 -1175 750)
+      (pin Rect[T]Pad_550.000000x250.000000_um 2 -1175 250)
+      (pin Rect[T]Pad_550.000000x250.000000_um 3 -1175 -250)
+      (pin Rect[T]Pad_550.000000x250.000000_um (rotate 180) 4 -1175 -750)
+      (pin Rect[T]Pad_550.000000x250.000000_um 5 1175 -750)
+      (pin Rect[T]Pad_550.000000x250.000000_um 6 1175 -250)
+      (pin Rect[T]Pad_550.000000x250.000000_um 7 1175 250)
+      (pin Rect[T]Pad_550.000000x250.000000_um 8 1175 750)
+      (pin Cust[T]Pad_1000.000000x1000.000000_1700.000000x1000.000000_6_um_74FF4D1FE1A4B69C4AB68F3D9CEF8AC6 9 0 0)
+    )
+    (image Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+      (outline (polygon signal 0  1845 945  1845 -945  -1845 -945  -1845 945))
+      (outline (path signal 120  -227.064 -735  227.064 -735))
+      (outline (path signal 120  -227.064 735  227.064 735))
+      (outline (path signal 100  -1000 -625  -1000 625))
+      (outline (path signal 100  1000 -625  -1000 -625))
+      (outline (path signal 100  -1000 625  1000 625))
+      (outline (path signal 100  1000 625  1000 -625))
+      (pin RoundRect[T]Pad_1200.000000x1400.000000_250.951000_um_0.000000_0 1 -1000 0)
+      (pin RoundRect[T]Pad_1200.000000x1400.000000_250.951000_um_0.000000_0 2 1000 0)
+    )
+    (image Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (outline (polygon signal 0  -1795 -6845  -1795 1795  1795 1795  1795 -6845))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 -1270  -1330 -6410))
+      (outline (path signal 120  1330 -1270  1330 -6410))
+      (outline (path signal 120  -1330 -6410  1330 -6410))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  1270 1270  1270 -6350))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  -1270 -6350  -1270 635))
+      (outline (path signal 100  1270 -6350  -1270 -6350))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 2 0 -2540)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 3 0 -5080)
+    )
+    (image Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (outline (polygon signal 0  1795 1795  1795 -4345  -1795 -4345  -1795 1795))
+      (outline (path signal 120  -1330 -3870  1330 -3870))
+      (outline (path signal 120  1330 -1270  1330 -3870))
+      (outline (path signal 120  -1330 -1270  -1330 -3870))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 100  1270 -3810  -1270 -3810))
+      (outline (path signal 100  -1270 -3810  -1270 635))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  1270 1270  1270 -3810))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 2 0 -2540)
+    )
+    (padstack Oval[A]Pad_1700.000000x1700.000000_um
+      (shape (path F.Cu 1700  0 0  0 0))
+      (shape (path B.Cu 1700  0 0  0 0))
+      (attach off)
+    )
+    (padstack Cust[T]Pad_1000.000000x1000.000000_1700.000000x1000.000000_6_um_74FF4D1FE1A4B69C4AB68F3D9CEF8AC6
+      (shape (polygon F.Cu 0  -500 550  -200 850  500 850  500 -850  -500 -850  -500 550))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1175.000000x1450.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -588.451 475  -569.348 571.035  -514.949 652.449  -433.535 706.848
+            -337.499 725.95  337.5 725.951  433.535 706.848  514.949 652.449
+            569.348 571.035  588.45 474.999  588.451 -475  569.348 -571.035
+            514.949 -652.449  433.535 -706.848  337.499 -725.95  -337.5 -725.951
+            -433.535 -706.848  -514.949 -652.449  -569.348 -571.035  -588.45 -474.999
+            -588.451 475))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1200.000000x1400.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -600.951 450  -581.848 546.035  -527.449 627.449  -446.035 681.848
+            -349.999 700.95  350 700.951  446.035 681.848  527.449 627.449
+            581.848 546.035  600.95 449.999  600.951 -450  581.848 -546.035
+            527.449 -627.449  446.035 -681.848  349.999 -700.95  -350 -700.951
+            -446.035 -681.848  -527.449 -627.449  -581.848 -546.035  -600.95 -449.999
+            -600.951 450))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_550.000000x250.000000_um
+      (shape (rect F.Cu -275 -125 275 125))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700.000000x1700.000000_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net /3.3V
+      (pins C1-1 U1-5 R1-1 R2-1 J1-1)
+    )
+    (net GND
+      (pins C1-2 U1-2 U1-7 U1-8 U1-9 J1-3)
+    )
+    (net /SDA1
+      (pins U1-1 R1-2 J2-1)
+    )
+    (net "unconnected-(U1-ALERT-Pad3)"
+      (pins U1-3)
+    )
+    (net /SCL1
+      (pins U1-4 R2-2 J2-2)
+    )
+    (net "unconnected-(U1-~{RESET}-Pad6)"
+      (pins U1-6)
+    )
+    (net "unconnected-(J1-Pin_2-Pad2)"
+      (pins J1-2)
+    )
+    (class kicad_default /3.3V /SCL1 /SDA1 GND "unconnected-(J1-Pin_2-Pad2)"
+      "unconnected-(U1-ALERT-Pad3)" "unconnected-(U1-~{RESET}-Pad6)"
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

@@ -1,0 +1,458 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer "Top Layer"
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer "Bottom Layer"
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  164689 -115004  132314 -115004  132314 -95003.6  164689 -95003.6
+            164689 -115004)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component "Vault:FP-SOT552-1-IPC_C"
+      (place U1 154563.6 -105753.6 front -90 (PN "PCA9615DPJ DNI"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_R
+      (place R6 153313.6 -99503.6 front 90 (PN "470Ω ±1%"))
+      (place R5 154563.6 -110378.6 front 90 (PN "470Ω ±1%"))
+      (place R7 155938.6 -110378.6 front 90 (PN "100Ω ±1%"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_C
+      (place C3 155938.6 -112753.6 front 90 (PN 1.0uF))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_C::1
+      (place C4 154563.6 -112753.6 front 90 (PN 100nF))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_C::2
+      (place C2 154688.6 -99553.6 front -90 (PN 100nF))
+      (place C1 156063.6 -99553.6 front -90 (PN 1.0uF))
+    )
+    (component "PrintNC_GRBLHAL_Breakout:SOP-4_P2.54"
+      (place U3 162188.6 -99753.6 front -90 (PN "EL357N(B)(TA)-G"))
+      (place U2 162188.6 -110228.6 front -90 (PN "EL357N(B)(TA)-G"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_R::1
+      (place R11 163263.6 -105228.6 front 0 (PN "680Ω ±1%"))
+    )
+    (component "Vault:FP-5555799-1-MFG"
+      (place J1 143898.6 -105413.6 front -90 (PN "5555799-1"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:HDR1X5
+      (place P18 158438.6 -113168.6 front 90 (PN "Header 5"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_R::2
+      (place R2 153313.6 -101678.6 front 90 (PN "100Ω ±1%"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_R::3
+      (place R9 161063.6 -105228.6 front 0 (PN "680Ω ±1%"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_R::4
+      (place R1 153188.6 -110378.6 front -90 (PN "470Ω ±1%"))
+      (place R8 153188.6 -112753.6 front -90 (PN "470Ω ±1%"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:0402_R::5
+      (place R10 159188.6 -99703.61 front 90 (PN "10KΩ ±1%"))
+    )
+    (component PrintNC_GRBLHAL_Breakout:HDR1X4
+      (place P19 134063.6 -99798.6 front -90 (PN "Header 4"))
+    )
+  )
+  (library
+    (image "Vault:FP-SOT552-1-IPC_C"
+      (outline (polygon signal 0  2751.07 1595  2751.07 -1595  -2751.06 -1595  -2751.06 1595))
+      (outline (path signal 200  -947.35 -1500  -947.35 1500))
+      (outline (path signal 200  947.35 -1500  -947.35 -1500))
+      (outline (path signal 200  947.35 -1500  947.35 1500))
+      (outline (path signal 200  947.35 1500  -947.35 1500))
+      (outline (path signal 250  -3406.06 1125  -3343.56 1108.25  -3297.81 1062.5  -3281.06 1000
+            -3297.81 937.5  -3343.56 891.747  -3406.06 875  -3468.56 891.747
+            -3514.31 937.5  -3531.06 1000  -3514.31 1062.5  -3468.56 1108.25
+            -3406.06 1125))
+      (outline (path signal 200  -2756.06 -1600  -2756.06 1600))
+      (outline (path signal 200  2756.07 -1600  -2756.06 -1600))
+      (outline (path signal 200  2756.07 -1600  2756.07 1600))
+      (outline (path signal 100  0 -500  0 500))
+      (outline (path signal 100  500 0  -500 0))
+      (outline (path signal 200  2756.07 1600  -2756.06 1600))
+      (outline (path signal 200  -1500 -1500  -1500 1500))
+      (outline (path signal 200  1500 -1500  -1500 -1500))
+      (outline (path signal 200  1500 -1500  1500 1500))
+      (outline (path signal 200  1500 1500  -1500 1500))
+      (pin Rect[T]Pad_1208.720000x235.830000_um 1 -2051.71 1000)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 2 -2051.71 500)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 3 -2051.71 0)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 4 -2051.71 -500)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 5 -2051.71 -1000)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 6 2051.71 -1000)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 7 2051.71 -500)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 8 2051.71 0)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 9 2051.71 500)
+      (pin RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0 10 2051.71 1000)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_R
+      (outline (path signal 200  975 575  975 -575))
+      (outline (path signal 200  300 575  975 575))
+      (outline (path signal 200  -975 575  -300 575))
+      (outline (path signal 200  -975 575  -975 -575))
+      (outline (path signal 200  300 -575  975 -575))
+      (outline (path signal 200  -975 -575  -300 -575))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_C
+      (outline (path signal 200  300 575  750 575))
+      (outline (path signal 200  -300 575  -750 575))
+      (outline (path signal 200  975 355  975 -355))
+      (outline (path signal 200  -975 355  -975 -355))
+      (outline (path signal 200  300 -575  750 -575))
+      (outline (path signal 200  -750 -575  -300 -575))
+      (outline (polygon signal 0  754.999 475  704.999 488.398  668.397 525.001  655 575.001
+            668.398 625.001  705.001 661.603  755.001 675  853.886 659.338
+            943.091 613.885  1013.88 543.091  1059.34 453.886  1075 355.001
+            1061.6 305.001  1025 268.398  975.001 255  925.001 268.397  888.398 304.999
+            875 354.999  875 378.869  856.731 422.974  822.974 456.731  778.869 475
+            754.999 475))
+      (outline (polygon signal 0  -875 354.999  -888.398 304.999  -925.001 268.397  -975.001 255
+            -1025 268.398  -1061.6 305.001  -1075 355.001  -1059.34 453.886
+            -1013.88 543.091  -943.091 613.885  -853.886 659.338  -755.001 675
+            -705.001 661.603  -668.398 625.001  -655 575.001  -668.397 525.001
+            -704.999 488.398  -754.999 475  -778.869 475  -822.974 456.731
+            -856.731 422.974  -875 378.869  -875 354.999))
+      (outline (polygon signal 0  875 -354.999  888.398 -304.999  925.001 -268.397  975.001 -255
+            1025 -268.398  1061.6 -305.001  1075 -355.001  1059.34 -453.886
+            1013.88 -543.091  943.091 -613.885  853.886 -659.338  755.001 -675
+            705.001 -661.603  668.398 -625.001  655 -575.001  668.397 -525.001
+            704.999 -488.398  754.999 -475  778.869 -475  822.974 -456.731
+            856.731 -422.974  875 -378.869  875 -354.999))
+      (outline (polygon signal 0  -754.999 -475  -704.999 -488.398  -668.397 -525.001  -655 -575.001
+            -668.398 -625.001  -705.001 -661.603  -755.001 -675  -853.886 -659.338
+            -943.091 -613.885  -1013.88 -543.091  -1059.34 -453.886  -1075 -355.001
+            -1061.6 -305.001  -1025 -268.398  -975.001 -255  -925.001 -268.397
+            -888.398 -304.999  -875 -354.999  -875 -378.869  -856.731 -422.974
+            -822.974 -456.731  -778.869 -475  -754.999 -475))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_C::1
+      (outline (path signal 200  300 575  750 575))
+      (outline (path signal 200  -300 575  -750 575))
+      (outline (path signal 200  975 355  975 -355))
+      (outline (path signal 200  -975 355  -975 -355))
+      (outline (path signal 200  300 -575  750 -575))
+      (outline (path signal 200  -750 -575  -300 -575))
+      (outline (polygon signal 0  754.999 474.99  704.999 488.388  668.397 524.991  655 574.991
+            668.398 624.991  705.001 661.593  755.001 674.99  853.886 659.328
+            943.091 613.875  1013.88 543.081  1059.34 453.876  1075 354.991
+            1061.6 304.991  1025 268.388  975.001 254.99  925.001 268.387
+            888.398 304.989  875 354.989  875 378.859  856.731 422.964  822.974 456.721
+            778.869 474.99  754.999 474.99))
+      (outline (polygon signal 0  -875 354.999  -888.398 304.999  -925.001 268.397  -975.001 255
+            -1025 268.398  -1061.6 305.001  -1075 355.001  -1059.34 453.886
+            -1013.88 543.091  -943.091 613.885  -853.886 659.338  -755.001 675
+            -705.001 661.603  -668.398 625.001  -655 575.001  -668.397 525.001
+            -704.999 488.398  -754.999 475  -778.869 475  -822.974 456.731
+            -856.731 422.974  -875 378.869  -875 354.999))
+      (outline (polygon signal 0  875 -355.009  888.398 -305.009  925.001 -268.407  975.001 -255.01
+            1025 -268.408  1061.6 -305.011  1075 -355.011  1059.34 -453.896
+            1013.88 -543.101  943.091 -613.895  853.886 -659.348  755.001 -675.01
+            705.001 -661.613  668.398 -625.011  655 -575.011  668.397 -525.011
+            704.999 -488.408  754.999 -475.01  778.869 -475.01  822.974 -456.741
+            856.731 -422.984  875 -378.879  875 -355.009))
+      (outline (polygon signal 0  -754.999 -475  -704.999 -488.398  -668.397 -525.001  -655 -575.001
+            -668.398 -625.001  -705.001 -661.603  -755.001 -675  -853.886 -659.338
+            -943.091 -613.885  -1013.88 -543.091  -1059.34 -453.886  -1075 -355.001
+            -1061.6 -305.001  -1025 -268.398  -975.001 -255  -925.001 -268.397
+            -888.398 -304.999  -875 -354.999  -875 -378.869  -856.731 -422.974
+            -822.974 -456.731  -778.869 -475  -754.999 -475))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_C::2
+      (outline (path signal 200  -300 -575  -750 -575))
+      (outline (path signal 200  750 -575  300 -575))
+      (outline (path signal 200  -975 -355  -975 355))
+      (outline (path signal 200  975 -355  975 355))
+      (outline (path signal 200  750 574.99  299.99 574.99))
+      (outline (path signal 200  -750 575  -300 575))
+      (outline (polygon signal 0  -754.999 -475  -704.999 -488.398  -668.397 -525.001  -655 -575.001
+            -668.398 -625.001  -705.001 -661.603  -755.001 -675  -853.886 -659.338
+            -943.091 -613.885  -1013.88 -543.091  -1059.34 -453.886  -1075 -355.001
+            -1061.6 -305.001  -1025 -268.398  -975.001 -255  -925.001 -268.397
+            -888.398 -304.999  -875 -354.999  -875 -378.869  -856.731 -422.974
+            -822.974 -456.731  -778.869 -475  -754.999 -475))
+      (outline (polygon signal 0  875 -354.999  888.398 -304.999  925.001 -268.397  975.001 -255
+            1025 -268.398  1061.6 -305.001  1075 -355.001  1059.34 -453.886
+            1013.88 -543.091  943.091 -613.885  853.886 -659.338  755.001 -675
+            705.001 -661.603  668.398 -625.001  655 -575.001  668.397 -525.001
+            704.999 -488.398  754.999 -475  778.869 -475  822.974 -456.731
+            856.731 -422.974  875 -378.869  875 -354.999))
+      (outline (polygon signal 0  -875 354.999  -888.398 304.999  -925.001 268.397  -975.001 255
+            -1025 268.398  -1061.6 305.001  -1075 355.001  -1059.34 453.886
+            -1013.88 543.091  -943.091 613.885  -853.886 659.338  -755.001 675
+            -705.001 661.603  -668.398 625.001  -655 575.001  -668.397 525.001
+            -704.999 488.398  -754.999 475  -778.869 475  -822.974 456.731
+            -856.731 422.974  -875 378.869  -875 354.999))
+      (outline (polygon signal 0  754.999 475  704.999 488.398  668.397 525.001  655 575.001
+            668.398 625.001  705.001 661.603  755.001 675  853.886 659.338
+            943.091 613.885  1013.88 543.091  1059.34 453.886  1075 355.001
+            1061.6 305.001  1025 268.398  975.001 255  925.001 268.397  888.398 304.999
+            875 354.999  875 378.869  856.731 422.974  822.974 456.731  778.869 475
+            754.999 475))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425 0)
+    )
+    (image "PrintNC_GRBLHAL_Breakout:SOP-4_P2.54"
+      (outline (path signal 254  -1600 -2000  -1600 2000))
+      (outline (path signal 254  1600 -2000  -1600 -2000))
+      (outline (path signal 254  1600 -2000  1600 2000))
+      (outline (path signal 254  1600 2000  -1600 2000))
+      (outline (path signal 400  -900 1500  -818.653 1482.71  -751.371 1433.83  -709.789 1361.8
+            -701.096 1279.09  -726.795 1200  -782.443 1138.2  -858.418 1104.37
+            -941.582 1104.37  -1017.56 1138.2  -1073.2 1200  -1098.9 1279.09
+            -1090.21 1361.8  -1048.63 1433.83  -981.347 1482.71  -900 1500))
+      (outline (path signal 300  -3400 2350  -3330.29 2332.82  -3276.55 2285.21  -3251.09 2218.08
+            -3259.75 2146.81  -3300.53 2087.72  -3364.1 2054.36  -3435.9 2054.36
+            -3499.47 2087.72  -3540.25 2146.81  -3548.91 2218.08  -3523.45 2285.21
+            -3469.71 2332.82  -3400 2350))
+      (outline (path signal 100  -2200 -2100  -2200 2100))
+      (outline (path signal 100  2200 -2100  -2200 -2100))
+      (outline (path signal 100  2200 -2100  2200 2100))
+      (outline (path signal 100  -2200 2100  2200 2100))
+      (pin Oval[T]Pad_800.000000x2000.000000_um (rotate 90) 1 -3000 1270)
+      (pin Oval[T]Pad_800.000000x2000.000000_um (rotate 90) 2 -3000 -1270)
+      (pin Oval[T]Pad_800.000000x2000.000000_um (rotate 90) 3 3000 -1270)
+      (pin Oval[T]Pad_800.000000x2000.000000_um (rotate 90) 4 3000 1270)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_R::1
+      (outline (path signal 200  -975 575  -300 575))
+      (outline (path signal 200  -975 -575  -975 575))
+      (outline (path signal 200  -975 -575  -300 -575))
+      (outline (path signal 200  300 575  975 575))
+      (outline (path signal 200  300 -575  975 -575))
+      (outline (path signal 200  975 -575  975 575))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425 0)
+    )
+    (image "Vault:FP-5555799-1-MFG"
+      (outline (polygon signal 0  7970 8415  7970 -8415  -7970 -8415  -7970 8415))
+      (outline (path signal 200  -7875 -8320  -7875 8320))
+      (outline (path signal 200  7875 -8320  -7875 -8320))
+      (outline (path signal 200  7875 -8320  7875 8320))
+      (outline (path signal 200  -7875 8320  7875 8320))
+      (outline (path signal 250  -4445 8965  -4382.5 8948.25  -4336.75 8902.5  -4320 8840
+            -4336.75 8777.5  -4382.5 8731.75  -4445 8715  -4507.5 8731.75
+            -4553.25 8777.5  -4570 8840  -4553.25 8902.5  -4507.5 8948.25
+            -4445 8965))
+      (outline (path signal 200  -7975 -8420  -7975 8420))
+      (outline (path signal 200  7975 -8420  -7975 -8420))
+      (outline (path signal 200  7975 -8420  7975 8420))
+      (outline (path signal 100  0 -500  0 500))
+      (outline (path signal 100  500 0  -500 0))
+      (outline (path signal 200  7975 8420  -7975 8420))
+      (outline (path signal 200  -7875 -8320  -7875 8320))
+      (outline (path signal 200  7875 -8320  -7875 -8320))
+      (outline (path signal 200  7875 -8320  7875 8320))
+      (outline (path signal 200  -7875 8320  7875 8320))
+      (pin Rect[A]Pad_1390.000000x1390.000000_um 1 -4445 4640)
+      (pin Round[A]Pad_1390.000000_um 2 -3175 7180)
+      (pin Round[A]Pad_1390.000000_um 3 -1905 4640)
+      (pin Round[A]Pad_1390.000000_um 4 -635 7180)
+      (pin Round[A]Pad_1390.000000_um 5 635 4640)
+      (pin Round[A]Pad_1390.000000_um 6 1905 7180)
+      (pin Round[A]Pad_1390.000000_um 7 3175 4640)
+      (pin Round[A]Pad_1390.000000_um 8 4445 7180)
+      (keepout "" (circle "Top Layer" 3750 -5715 -1710))
+      (keepout "" (circle "Bottom Layer" 3750 -5715 -1710))
+      (keepout "" (circle "Top Layer" 3750 5715 -1710))
+      (keepout "" (circle "Bottom Layer" 3750 5715 -1710))
+    )
+    (image PrintNC_GRBLHAL_Breakout:HDR1X5
+      (outline (path signal 200  11430 1270  11430 -1270))
+      (outline (path signal 200  -1270 1270  11430 1270))
+      (outline (path signal 200  -1270 1270  -1270 -1270))
+      (outline (path signal 200  -1270 -1270  11430 -1270))
+      (pin Rect[A]Pad_1500.000000x1500.000000_um 1 0 0)
+      (pin Round[A]Pad_1500.000000_um 2 2540 0)
+      (pin Round[A]Pad_1500.000000_um 3 5080 0)
+      (pin Round[A]Pad_1500.000000_um 4 7620 0)
+      (pin Round[A]Pad_1500.000000_um 5 10160 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_R::2
+      (outline (path signal 200  975 575  975 -575))
+      (outline (path signal 200  300 575  975 575))
+      (outline (path signal 200  -975 575  -300 575))
+      (outline (path signal 200  -975 575  -975 -575.01))
+      (outline (path signal 200  975 -575  300 -575.01))
+      (outline (path signal 200  -300 -575  -975 -575.01))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_R::3
+      (outline (path signal 200  -975 575  -300 575))
+      (outline (path signal 200  -975 -575  -975 575))
+      (outline (path signal 200  -975 -575  -300 -575))
+      (outline (path signal 200  300 575  975 575))
+      (outline (path signal 200  300 -575  975 -575))
+      (outline (path signal 200  975 -575  975 575))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425.01 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_R::4
+      (outline (path signal 200  -975 -575  -975 575))
+      (outline (path signal 200  -300 -575  -975 -575))
+      (outline (path signal 200  975 -575  300 -575))
+      (outline (path signal 200  975 -575  975 575))
+      (outline (path signal 200  -300 575  -975 575))
+      (outline (path signal 200  975 575  300 575))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -425 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:0402_R::5
+      (outline (path signal 200  975 575  975.01 -575))
+      (outline (path signal 200  300 575  975 575))
+      (outline (path signal 200  -975 575  -300 575))
+      (outline (path signal 200  -975 575  -975 -575.01))
+      (outline (path signal 200  975.01 -575  300 -575.01))
+      (outline (path signal 200  -299.99 -575  -975 -575.01))
+      (pin Rect[T]Pad_600.000000x650.000000_um 1 -424.99 0)
+      (pin Rect[T]Pad_600.000000x650.000000_um 2 425.01 0)
+    )
+    (image PrintNC_GRBLHAL_Breakout:HDR1X4
+      (outline (path signal 200  -1270 -1270  8890 -1270))
+      (outline (path signal 200  -1270 -1270  -1270 1270))
+      (outline (path signal 200  8890 -1270  8890 1270))
+      (outline (path signal 200  8890 1270  -1270 1270))
+      (pin Rect[A]Pad_1500.000000x1500.000000_um 1 0 0)
+      (pin Round[A]Pad_1500.000000_um 2 2540 0)
+      (pin Round[A]Pad_1500.000000_um 3 5080 0)
+      (pin Round[A]Pad_1500.000000_um 4 7620 0)
+    )
+    (padstack Round[A]Pad_1390.000000_um
+      (shape (circle "Top Layer" 1390))
+      (shape (circle "Bottom Layer" 1390))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1500.000000_um
+      (shape (circle "Top Layer" 1500))
+      (shape (circle "Bottom Layer" 1500))
+      (attach off)
+    )
+    (padstack Oval[T]Pad_800.000000x2000.000000_um
+      (shape (path "Top Layer" 800  0 -600  0 600))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1208.720000x235.830000_118.364000_um_0.000000_0
+      (shape (polygon "Top Layer" 0  -604.809 0  -595.799 45.296  -570.141 83.696  -531.741 109.354
+            -486.445 118.364  486.445 118.364  531.741 109.354  570.141 83.696
+            595.799 45.296  604.809 0  595.799 -45.296  570.141 -83.696
+            531.741 -109.354  486.445 -118.364  -486.445 -118.364  -531.741 -109.354
+            -570.141 -83.696  -595.799 -45.296  -604.809 0  -604.809 0))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_600.000000x650.000000_um
+      (shape (rect "Top Layer" -300 -325 300 325))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1208.720000x235.830000_um
+      (shape (rect "Top Layer" -604.36 -117.915 604.36 117.915))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1390.000000x1390.000000_um
+      (shape (rect "Top Layer" -695 -695 695 695))
+      (shape (rect "Bottom Layer" -695 -695 695 695))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1500.000000x1500.000000_um
+      (shape (rect "Top Layer" -750 -750 750 750))
+      (shape (rect "Bottom Layer" -750 -750 750 750))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle "Top Layer" 600))
+      (shape (circle "Bottom Layer" 600))
+      (attach off)
+    )
+  )
+  (network
+    (net +3.3V
+      (pins U1-1 C2-2 C1-2 R10-2 P19-1)
+    )
+    (net SDA
+      (pins U1-2 P19-3)
+    )
+    (net SCL
+      (pins U1-4 P19-2)
+    )
+    (net GND
+      (pins U1-5 R6-2 C3-1 C4-1 C2-1 U3-3 J1-5 U2-3 P18-5 C1-1 R1-2 P19-4)
+    )
+    (net "SCL_EXT-"
+      (pins U1-6 J1-1 R2-2 R1-1)
+    )
+    (net SCL_EXT+
+      (pins U1-7 J1-2 R2-1 R5-2)
+    )
+    (net SDA_EXT+
+      (pins U1-8 J1-8 R7-1 R8-2)
+    )
+    (net "SDA_EXT-"
+      (pins U1-9 R6-1 J1-7 R7-2)
+    )
+    (net +5V
+      (pins U1-10 C3-2 C4-2 R11-1 J1-4 P18-1 R5-1 R9-1 R8-1)
+    )
+    (net NetR11_2
+      (pins U3-1 R11-2)
+    )
+    (net KPSTR_KEYPAD
+      (pins U3-2 J1-6)
+    )
+    (net KPSTR
+      (pins U3-4 P18-4 R10-1)
+    )
+    (net HALT_KEYPAD
+      (pins J1-3 U2-2)
+    )
+    (net NetR9_2
+      (pins U2-1 R9-2)
+    )
+    (net HALT
+      (pins U2-4 P18-3)
+    )
+    (class kicad_default +3.3V +5V GND HALT HALT_KEYPAD KPSTR KPSTR_KEYPAD
+      NetR11_2 NetR9_2 SCL SCL_EXT+ "SCL_EXT-" SDA SDA_EXT+ "SDA_EXT-"
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

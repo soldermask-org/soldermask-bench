@@ -1,0 +1,227 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type power)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  95848.3 -32752.4  96041 -32790.7  96222.5 -32865.9  96385.9 -32975.1
+            96524.9 -33114.1  96634.1 -33277.5  96709.3 -33459  96747.6 -33651.7
+            96750 -33750  96750 -62000  96747.6 -62098.3  96709.3 -62291
+            96634.1 -62472.5  96524.9 -62635.9  96385.9 -62774.9  96222.5 -62884.1
+            96041 -62959.3  95848.3 -62997.6  95750 -63000  57750 -63000
+            57651.7 -62997.6  57459 -62959.3  57277.5 -62884.1  57114.1 -62774.9
+            56975.1 -62635.9  56865.9 -62472.5  56790.7 -62291  56752.4 -62098.3
+            56750 -62000  56750 -33750  56752.4 -33651.7  56790.7 -33459
+            56865.9 -33277.5  56975.1 -33114.1  57114.1 -32975.1  57277.5 -32865.9
+            57459 -32790.7  57651.7 -32752.4  57750 -32750  95750 -32750
+            95848.3 -32752.4)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component Mounting_Holes:MountingHole_3.2mm_M3
+      (place REF** 61000 -36250 front 0 (PN MountingHole_3.2mm_M3))
+      (place REF**_1 61000 -59500 front 0 (PN MountingHole_3.2mm_M3))
+      (place REF**_2 86500 -36250 front 0 (PN MountingHole_3.2mm_M3))
+      (place REF**_3 86500 -59500 front 0 (PN MountingHole_3.2mm_M3))
+    )
+    (component "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol"
+      (place P2 93250 -45250 front 90 (PN LED_OUT))
+    )
+    (component ICSP_1mm097_Drill:ICSP_1mm097Drill
+      (place CON1 62500 -50750 front 180 (PN "AVR-ISP-6"))
+      (place P1 78750 -57250 front 180 (PN POGOPINS))
+    )
+    (component 1x4_1mm097Drill:1x4_1mm097Drill
+      (place P3 93250 -56250 front 180 (PN LED_POGO))
+    )
+    (component LOGOS:logo_MLlabs_small
+      (place G*** 74250 -45750 back 0 (PN LOGO))
+    )
+  )
+  (library
+    (image Mounting_Holes:MountingHole_3.2mm_M3
+      (outline (polygon signal 0  372.747 3427.32  741.112 3366.93  1100.8 3267.06  1447.58 3128.89
+            1777.39 2954.03  2086.35 2744.55  2370.86 2502.89  2627.57 2231.88
+            2853.48 1934.71  3045.93 1614.85  3202.67 1276.06  3321.86 922.312
+            3402.11 557.752  3442.47 186.613  3445 0  3442.47 -186.612  3402.11 -557.751
+            3321.86 -922.311  3202.67 -1276.06  3045.93 -1614.85  2853.48 -1934.71
+            2627.57 -2231.88  2370.86 -2502.89  2086.35 -2744.55  1777.39 -2954.03
+            1447.58 -3128.89  1100.8 -3267.06  741.112 -3366.93  372.747 -3427.32
+            0 -3447.53  -372.748 -3427.32  -741.113 -3366.93  -1100.8 -3267.06
+            -1447.58 -3128.89  -1777.39 -2954.03  -2086.35 -2744.55  -2370.86 -2502.89
+            -2627.57 -2231.88  -2853.48 -1934.71  -3045.93 -1614.85  -3202.67 -1276.06
+            -3321.86 -922.311  -3402.11 -557.751  -3442.47 -186.641  -3442.47 186.642
+            -3402.11 557.752  -3321.86 922.312  -3202.67 1276.06  -3045.93 1614.85
+            -2853.48 1934.71  -2627.57 2231.88  -2370.86 2502.89  -2086.35 2744.55
+            -1777.39 2954.03  -1447.58 3128.89  -1100.8 3267.06  -741.113 3366.93
+            -372.748 3427.32  0 3447.53))
+      (outline (path signal 150  3200 0  3180.58 -352.026  3122.55 -699.779  3026.61 -1039.04
+            2893.94 -1365.68  2726.14 -1675.75  2525.25 -1965.48  2293.7 -2231.35
+            2034.32 -2470.13  1750.23 -2678.93  1444.91 -2855.21  1122.04 -2996.84
+            785.554 -3102.08  439.531 -3169.67  88.174 -3198.78  -264.254 -3189.07
+            -613.474 -3140.64  -955.247 -3054.1  -1285.42 -2930.47  -1600 -2771.28
+            -1895.15 -2578.45  -2167.3 -2354.32  -2413.14 -2101.61  -2629.69 -1823.39
+            -2814.32 -1523.03  -2964.78 -1204.19  -3079.26 -870.731  -3156.36 -526.703
+            -3195.14 -176.281  -3195.14 176.281  -3156.36 526.703  -3079.26 870.731
+            -2964.78 1204.19  -2814.32 1523.03  -2629.69 1823.39  -2413.14 2101.61
+            -2167.3 2354.32  -1895.15 2578.45  -1600 2771.28  -1285.42 2930.47
+            -955.247 3054.1  -613.474 3140.64  -264.254 3189.07  88.174 3198.78
+            439.531 3169.67  785.554 3102.08  1122.04 2996.84  1444.91 2855.21
+            1750.23 2678.93  2034.32 2470.13  2293.7 2231.35  2525.25 1965.48
+            2726.14 1675.75  2893.94 1365.68  3026.61 1039.04  3122.55 699.779
+            3180.58 352.026  3200 0))
+      (keepout "" (circle F.Cu 3700))
+      (keepout "" (circle B.Cu 3700))
+    )
+    (image "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol"
+      (outline (polygon signal 0  -1773 -3297  -1773 3297  9393 3297  9393 -3297))
+      (outline (path signal 150  9110.98 3098.8  -1490.98 3098.8))
+      (outline (path signal 150  -1485.9 3098.8  -1485.9 -3098.8))
+      (outline (path signal 150  -1490.98 2700.02  9110.98 2700.02))
+      (outline (path signal 150  8910.32 -2600.96  8910.32 -3098.8))
+      (outline (path signal 150  6306.82 -2600.96  6306.82 -3098.8))
+      (outline (path signal 150  3810 -2600.96  3810 -3098.8))
+      (outline (path signal 150  -1490.98 -2600.96  9110.98 -2600.96))
+      (outline (path signal 150  9110.98 -3098.8  -1490.98 -3098.8))
+      (outline (path signal 150  9108.44 -3098.8  9108.44 3098.8))
+      (outline (path signal 150  1313.18 -3098.8  1313.18 -2600.96))
+      (outline (path signal 150  -1287.78 -3098.8  -1287.78 -2600.96))
+      (pin Rect[A]Pad_1998.980000x1998.980000_um (rotate 180) 1 0 0)
+      (pin Oval[A]Pad_1998.980000x1998.980000_um (rotate 180) 2 2540 0)
+      (pin Oval[A]Pad_1998.980000x1998.980000_um (rotate 180) 3 5080 0)
+      (pin Oval[A]Pad_1998.980000x1998.980000_um (rotate 180) 4 7620 0)
+    )
+    (image ICSP_1mm097_Drill:ICSP_1mm097Drill
+      (outline (polygon signal 0  -1595 1595  4095 1595  4095 -6595  -1595 -6595))
+      (outline (path signal 120  3930 -6470  3930 1390))
+      (outline (path signal 120  3930 1390  1270 1390))
+      (outline (path signal 120  1270 -1270  -1390 -1270))
+      (outline (path signal 120  1270 1390  1270 -1270))
+      (outline (path signal 120  -1390 -6470  3930 -6470))
+      (outline (path signal 120  -1390 -1270  -1390 -6470))
+      (outline (path signal 120  -1390 0  -1390 1390))
+      (outline (path signal 120  -1390 1390  0 1390))
+      (outline (path signal 100  3810 -6350  3810 1270))
+      (outline (path signal 100  3810 1270  -1270 1270))
+      (outline (path signal 100  -1270 -6350  3810 -6350))
+      (outline (path signal 100  -1270 1270  -1270 -6350))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 2 2540 0)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 3 0 -2540)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 4 2540 -2540)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 5 0 -5080)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 6 2540 -5080)
+    )
+    (image 1x4_1mm097Drill:1x4_1mm097Drill
+      (outline (polygon signal 0  -1595 1595  1595 1595  1595 -9195  -1595 -9195))
+      (outline (path signal 120  1390 -9010  1390 -1270))
+      (outline (path signal 120  1390 -1270  -1390 -1270))
+      (outline (path signal 120  -1390 -9010  1390 -9010))
+      (outline (path signal 120  -1390 -1270  -1390 -9010))
+      (outline (path signal 120  -1390 0  -1390 1390))
+      (outline (path signal 120  -1390 1390  0 1390))
+      (outline (path signal 100  1270 -8890  1270 1270))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 100  -1270 -8890  1270 -8890))
+      (outline (path signal 100  -1270 1270  -1270 -8890))
+      (pin Rect[A]Pad_1700.000000x1700.000000_um 1 0 0)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 2 0 -2540)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 3 0 -5080)
+      (pin Oval[A]Pad_1700.000000x1700.000000_um 4 0 -7620)
+    )
+    (image LOGOS:logo_MLlabs_small
+    )
+    (padstack Oval[A]Pad_1700.000000x1700.000000_um
+      (shape (path F.Cu 1700  0 0  0 0))
+      (shape (path B.Cu 1700  0 0  0 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1998.980000x1998.980000_um
+      (shape (path F.Cu 1998.98  0 0  0 0))
+      (shape (path B.Cu 1998.98  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700.000000x1700.000000_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1998.980000x1998.980000_um
+      (shape (rect F.Cu -999.49 -999.49 999.49 999.49))
+      (shape (rect B.Cu -999.49 -999.49 999.49 999.49))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(P2-Pad1)"
+      (pins P2-1 P3-1)
+    )
+    (net "Net-(P2-Pad2)"
+      (pins P2-2 P3-2)
+    )
+    (net "Net-(P2-Pad3)"
+      (pins P2-3 P3-3)
+    )
+    (net "Net-(P2-Pad4)"
+      (pins P2-4 P3-4)
+    )
+    (net MISO
+      (pins CON1-1 P1-2)
+    )
+    (net VCC
+      (pins CON1-2 P1-1)
+    )
+    (net SCK
+      (pins CON1-3 P1-4)
+    )
+    (net MOSI
+      (pins CON1-4 P1-3)
+    )
+    (net RST
+      (pins CON1-5 P1-6)
+    )
+    (net GND
+      (pins CON1-6 P1-5)
+    )
+    (class kicad_default GND MISO MOSI "Net-(P2-Pad1)" "Net-(P2-Pad2)" "Net-(P2-Pad3)"
+      "Net-(P2-Pad4)" RST SCK VCC
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

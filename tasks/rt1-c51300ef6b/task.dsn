@@ -1,0 +1,258 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  48260 0  11430 0  11430 6604  0 6604  0 18796  11430 18796
+            11430 25400  48260 25400  48260 0)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component "LED-TRICOLOR-5050"
+      (place LED1 43688 12700 front 0 (PN "LED-TRICOLOR-5050NO_IC"))
+    )
+    (component 1206
+      (place R2 15621 11430 front 180)
+      (place R4 15621 15240 front 180)
+    )
+    (component 1206::1
+      (place R5 34798 16510 front 0)
+      (place R1 15621 7620 front 0)
+      (place R6 34798 12700 front 0)
+      (place C1 16002 3810 front 0)
+      (place R3 34798 8890 front 0)
+    )
+    (component 1X03_SMD_RA_MALE
+      (place JP2 46990 20320 front 90)
+      (place JP1 46990 5080 front 90)
+    )
+    (component 1206::2
+      (place C2 33274 3556 front -90)
+    )
+    (component "USB-A-PCB"
+      (place JP3 4191 12700 front 180 (PN USBPCB))
+    )
+    (component "SO08-EIAJ"
+      (place U1 27178 8890 front 180 (PN "Tiny85-20-SMT"))
+    )
+  )
+  (library
+    (image "LED-TRICOLOR-5050"
+      (outline (path signal 203.2  -2500 700  -2500 900))
+      (outline (path signal 203.2  -2500 -900  -2500 -700))
+      (outline (path signal 203.2  -1000 2500  1000 2500))
+      (outline (path signal 203.2  -1000 -2500  1000 -2500))
+      (outline (path signal 203.2  254 127  508 127))
+      (outline (path signal 203.2  254 -127  254 127))
+      (outline (path signal 203.2  508 127  508 -127))
+      (outline (path signal 203.2  508 -127  254 -127))
+      (outline (path signal 203.2  2500 700  2500 900))
+      (outline (path signal 203.2  2500 -900  2500 -700))
+      (outline (path signal 203.2  -476.4 2000  -493.421 1914.43  -541.891 1841.89  -614.432 1793.42
+            -700 1776.4  -785.568 1793.42  -858.109 1841.89  -906.579 1914.43
+            -923.6 2000  -906.579 2085.57  -858.109 2158.11  -785.568 2206.58
+            -700 2223.6  -614.432 2206.58  -541.891 2158.11  -493.421 2085.57
+            -476.4 2000))
+      (outline (path signal 127  -2500 2000  -1800 2500))
+      (outline (path signal 127  -2500 -2500  -2500 2000))
+      (outline (path signal 127  -1800 2500  2500 2500))
+      (outline (path signal 127  2500 2500  2500 -2500))
+      (outline (path signal 127  2500 -2500  -2500 -2500))
+      (outline (path signal 127  2000 0  1980.54 -278.346  1922.52 -551.275  1827.09 -813.473
+            1696.1 -1059.84  1532.09 -1285.58  1338.26 -1486.29  1118.39 -1658.08
+            876.742 -1797.59  618.034 -1902.11  347.296 -1969.62  69.799 -1998.78
+            -209.057 -1989.04  -483.844 -1940.59  -749.213 -1854.37  -1000 -1732.05
+            -1231.32 -1576.02  -1438.68 -1389.32  -1618.03 -1175.57  -1765.89 -938.943
+            -1879.38 -684.04  -1956.3 -415.823  -1995.13 -139.513  -1995.13 139.513
+            -1956.3 415.823  -1879.38 684.04  -1765.89 938.943  -1618.03 1175.57
+            -1438.68 1389.32  -1231.32 1576.02  -1000 1732.05  -749.213 1854.37
+            -483.844 1940.59  -209.057 1989.04  69.799 1998.78  347.296 1969.62
+            618.034 1902.11  876.742 1797.59  1118.39 1658.08  1338.26 1486.29
+            1532.09 1285.58  1696.1 1059.84  1827.09 813.473  1922.52 551.275
+            1980.54 278.346  2000 0))
+      (pin RoundRect[T]Pad_2000.000000x1100.000000_552.093000_um_0.000000_0 1 -2400 1700)
+      (pin RoundRect[T]Pad_2000.000000x1100.000000_552.093000_um_0.000000_0 2 -2400 0)
+      (pin RoundRect[T]Pad_2000.000000x1100.000000_552.093000_um_0.000000_0 3 -2400 -1700)
+      (pin RoundRect[T]Pad_2000.000000x1100.000000_552.093000_um_0.000000_0 4 2400 -1700)
+      (pin RoundRect[T]Pad_2000.000000x1100.000000_552.093000_um_0.000000_0 5 2400 0)
+      (pin RoundRect[T]Pad_2000.000000x1100.000000_552.093000_um_0.000000_0 6 2400 1700)
+    )
+    (image 1206
+      (outline (polygon signal 0  -2468 978  2468 978  2468 -978  -2468 -978))
+      (outline (path signal 101.6  -965 -787  965 -787))
+      (outline (path signal 101.6  -965 787  965 787))
+      (pin Rect[T]Pad_1600.000000x1800.000000_um 1 -1500 0)
+      (pin Rect[T]Pad_1600.000000x1800.000000_um 2 1500 0)
+    )
+    (image 1206::1
+      (outline (polygon signal 0  2468 -978  -2468 -978  -2468 978  2468 978))
+      (outline (path signal 101.6  -965 787  965 787))
+      (outline (path signal 101.6  -965 -787  965 -787))
+      (pin Rect[T]Pad_1600.000000x1800.000000_um 1 -1500 0)
+      (pin Rect[T]Pad_1600.000000x1800.000000_um 2 1500 0)
+    )
+    (image 1X03_SMD_RA_MALE
+      (outline (path signal 177.8  3810 1250  -3810 1250))
+      (outline (path signal 177.8  -3810 1250  -3810 -1250))
+      (outline (path signal 177.8  3810 -1250  3810 1250))
+      (outline (path signal 177.8  3810 -1250  2530 -1250))
+      (outline (path signal 177.8  2530 -1250  -10 -1250))
+      (outline (path signal 127  2530 -1250  2530 -7250))
+      (outline (path signal 177.8  -10 -1250  -2550 -1250))
+      (outline (path signal 127  -10 -1250  -10 -7250))
+      (outline (path signal 177.8  -2550 -1250  -3810 -1250))
+      (outline (path signal 127  -2550 -1250  -2550 -7250))
+      (pin Rect[T]Pad_3000.000000x1000.000000_um (rotate 90) 1 -2540 5000)
+      (pin Rect[T]Pad_3000.000000x1000.000000_um (rotate 90) 2 0 5000)
+      (pin Rect[T]Pad_3000.000000x1000.000000_um (rotate 90) 3 2540 5000)
+    )
+    (image 1206::2
+      (outline (polygon signal 0  2468 978  2468 -978  -2468 -978  -2468 978))
+      (outline (path signal 101.6  -965 -787  965 -787))
+      (outline (path signal 101.6  -965 787  965 787))
+      (pin Rect[T]Pad_1600.000000x1800.000000_um 1 -1500 0)
+      (pin Rect[T]Pad_1600.000000x1800.000000_um 2 1500 0)
+    )
+    (image "USB-A-PCB"
+      (outline (path signal 127  3700 -6000  -5000 -6000))
+      (outline (path signal 127  3700 6000  3700 -6000))
+      (outline (path signal 127  -5000 -6000  -5000 6000))
+      (outline (path signal 127  -5000 6000  3700 6000))
+      (pin Rect[T]Pad_7500.000000x1500.000000_um 5V -200 3500)
+      (pin Rect[T]Pad_7500.000000x1500.000000_um GND -200 -3500)
+      (pin Rect[T]Pad_6500.000000x1000.000000_um USB_M 300 -1000)
+      (pin Rect[T]Pad_6500.000000x1000.000000_um USB_P 300 1000)
+    )
+    (image "SO08-EIAJ"
+      (outline (path signal 152.4  2362 -2565  2362 2539.6))
+      (outline (path signal 152.4  -2362 2539.6  -2362 -2565))
+      (outline (path signal 203.2  -1947 -1752.6  -1930.55 -1685.87  -1884.97 -1634.42
+            -1820.71 -1610.05  -1752.48 -1618.33  -1695.91 -1657.38  -1663.97 -1718.23
+            -1663.97 -1786.97  -1695.91 -1847.82  -1752.48 -1886.87  -1820.71 -1895.15
+            -1884.97 -1870.78  -1930.55 -1819.33  -1947 -1752.6))
+      (outline (path signal 152.4  2362 2539.6  -2362 2539.6))
+      (outline (path signal 152.4  -2362 -2565  2362 -2565))
+      (pin Rect[T]Pad_609.600000x2209.800000_um 1 -1905 -3378.2)
+      (pin Rect[T]Pad_609.600000x2209.800000_um 2 -635 -3378.2)
+      (pin Rect[T]Pad_609.600000x2209.800000_um 3 635 -3378.2)
+      (pin Rect[T]Pad_609.600000x2209.800000_um 4 1905 -3378.2)
+      (pin Rect[T]Pad_609.600000x2209.800000_um 5 1905 3352.8)
+      (pin Rect[T]Pad_609.600000x2209.800000_um 6 635 3352.8)
+      (pin Rect[T]Pad_609.600000x2209.800000_um 7 -635 3352.8)
+      (pin Rect[T]Pad_609.600000x2209.800000_um 8 -1905 3352.8)
+    )
+    (padstack RoundRect[T]Pad_2000.000000x1100.000000_552.093000_um_0.000000_0
+      (shape (polygon F.Cu 0  -1002.09 0  -986.395 130.716  -931.238 270.586  -840.389 390.389
+            -720.586 481.238  -580.716 536.395  -449.999 552.092  450 552.093
+            580.716 536.395  720.586 481.238  840.389 390.389  931.238 270.586
+            986.395 130.716  1002.09 -0.001  1002.09 0  986.395 -130.716
+            931.238 -270.586  840.389 -390.389  720.586 -481.238  580.716 -536.395
+            449.999 -552.092  -450 -552.093  -580.716 -536.395  -720.586 -481.238
+            -840.389 -390.389  -931.238 -270.586  -986.395 -130.716  -1002.09 0.001
+            -1002.09 0))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_3000.000000x1000.000000_um
+      (shape (rect F.Cu -1500 -500 1500 500))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_609.600000x2209.800000_um
+      (shape (rect F.Cu -304.8 -1104.9 304.8 1104.9))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_6500.000000x1000.000000_um
+      (shape (rect F.Cu -3250 -500 3250 500))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_7500.000000x1500.000000_um
+      (shape (rect F.Cu -3750 -750 3750 750))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1600.000000x1800.000000_um
+      (shape (rect F.Cu -800 -900 800 900))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net N$5
+      (pins LED1-1 R5-2)
+    )
+    (net N$4
+      (pins LED1-2 R6-2)
+    )
+    (net N$6
+      (pins LED1-3 R3-2)
+    )
+    (net GND
+      (pins LED1-4 LED1-5 LED1-6 JP2-3 C2-2 JP3-GND U1-4 C1-2)
+    )
+    (net SCK
+      (pins R2-1 JP1-2 U1-7)
+    )
+    (net D+
+      (pins R2-2 R1-1 JP3-USB_P)
+    )
+    (net MISO
+      (pins R5-1 JP2-2 U1-3)
+    )
+    (net RST
+      (pins JP2-1 U1-1)
+    )
+    (net N$1
+      (pins R4-1 U1-2)
+    )
+    (net "D-"
+      (pins R4-2 JP3-USB_M)
+    )
+    (net +5V
+      (pins R1-2 C2-1 JP1-1 JP3-5V U1-8 C1-1)
+    )
+    (net MOSI
+      (pins JP1-3 R6-1 U1-5)
+    )
+    (net N$2
+      (pins U1-6 R3-1)
+    )
+    (class kicad_default +5V D+ "D-" GND MISO MOSI N$1 N$2 N$4 N$5 N$6 RST
+      SCK
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)
