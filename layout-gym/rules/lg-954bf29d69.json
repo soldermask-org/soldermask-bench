@@ -1,0 +1,504 @@
+{
+ "source": "kicad_pro",
+ "min": {
+  "max_error": 0.005,
+  "min_clearance": 0.09,
+  "min_connection": 0.09,
+  "min_copper_edge_clearance": 0.2,
+  "min_groove_width": 0.0,
+  "min_hole_clearance": 0.254,
+  "min_hole_to_hole": 0.254,
+  "min_microvia_diameter": 0.0,
+  "min_microvia_drill": 0.2,
+  "min_resolved_spokes": 2,
+  "min_silk_clearance": 0.15,
+  "min_text_height": 1.0,
+  "min_text_thickness": 0.15,
+  "min_through_hole_diameter": 0.2,
+  "min_track_width": 0.09,
+  "min_via_annular_width": 0.075,
+  "min_via_diameter": 0.35,
+  "solder_mask_to_copper_clearance": 0.005,
+  "use_height_for_length_calcs": true
+ },
+ "default": {
+  "clearance": 0.15,
+  "track_width": 0.2,
+  "via_diameter": 0.6,
+  "via_drill": 0.3,
+  "diff_pair_width": 0.2,
+  "diff_pair_gap": 0.25
+ },
+ "classes": [
+  {
+   "name": "Default",
+   "clearance": 0.15,
+   "track_width": 0.2,
+   "via_diameter": 0.6,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "3V3",
+   "clearance": 0.15,
+   "track_width": 0.2,
+   "via_diameter": 0.6,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "5V",
+   "clearance": 0.15,
+   "track_width": 0.2,
+   "via_diameter": 0.6,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "RF",
+   "clearance": 0.18,
+   "track_width": 0.35,
+   "via_diameter": 0.6,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "VCCINT",
+   "clearance": 0.15,
+   "track_width": 0.2,
+   "via_diameter": 0.6,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  }
+ ],
+ "patterns": [
+  {
+   "netclass": "RF",
+   "pattern": "/*RF_*"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "PORT?LO*"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "REFLO*"
+  },
+  {
+   "netclass": "5V",
+   "pattern": "*5V*"
+  },
+  {
+   "netclass": "3V3",
+   "pattern": "*3V3*"
+  },
+  {
+   "netclass": "VCCINT",
+   "pattern": "*VCCINT*"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "*RFOUT*"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "/HF Source/SRC_RFOUTA_P"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "SOURCE_LOWBAND"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "/2.LO + Ref Clock/CLK_SOURCE_LB"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "/2.LO + Ref Clock/CLK_REFLO2"
+  },
+  {
+   "netclass": "RF",
+   "pattern": "/1.LO/LO1_REFC"
+  }
+ ],
+ "assignments": {
+  "/2.LO + Ref Clock/CLKIN": [
+   "RF"
+  ],
+  "/2.LO + Ref Clock/CLKOUT": [
+   "RF"
+  ],
+  "/2.LO + Ref Clock/CLK_CLKIN": [
+   "RF"
+  ],
+  "/2.LO + Ref Clock/CLK_CLKOUT": [
+   "RF"
+  ],
+  "/2.LO + Ref Clock/CLK_PORT1LO2": [
+   "RF"
+  ],
+  "/2.LO + Ref Clock/CLK_PORT2_LO2": [
+   "RF"
+  ],
+  "/2.LO + Ref Clock/CLK_REFLO2": [
+   "RF"
+  ],
+  "/2.LO + Ref Clock/CLK_SOURCE_LB": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_IN_ANT": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_IN_RF1": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_IN_RF3": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_IN_RF4": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_OUT_ANT": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_OUT_RF1": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_OUT_RF2": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_OUT_RF4": [
+   "RF"
+  ],
+  "/HF Source/SRC_FILT_THRU": [
+   "RF"
+  ],
+  "/HF Source/SRC_REF_IN": [
+   "RF"
+  ],
+  "/HF Source/SRC_RFOUTA_N": [
+   "RF"
+  ],
+  "/HF Source/SRC_RFOUTA_P": [
+   "RF"
+  ],
+  "FPGA_CLK": [
+   "RF"
+  ],
+  "LO1_REF": [
+   "RF"
+  ],
+  "Net-(C112-Pad2)": [
+   "RF"
+  ],
+  "Net-(C113-Pad1)": [
+   "RF"
+  ],
+  "Net-(C120-Pad2)": [
+   "RF"
+  ],
+  "Net-(C121-Pad1)": [
+   "RF"
+  ],
+  "Net-(C121-Pad2)": [
+   "RF"
+  ],
+  "Net-(C123-Pad2)": [
+   "RF"
+  ],
+  "Net-(C128-Pad1)": [
+   "RF"
+  ],
+  "Net-(C128-Pad2)": [
+   "RF"
+  ],
+  "Net-(C130-Pad1)": [
+   "RF"
+  ],
+  "Net-(C130-Pad2)": [
+   "RF"
+  ],
+  "Net-(C133-Pad2)": [
+   "RF"
+  ],
+  "Net-(C136-Pad1)": [
+   "RF"
+  ],
+  "Net-(C149-Pad2)": [
+   "RF"
+  ],
+  "Net-(C150-Pad1)": [
+   "RF"
+  ],
+  "Net-(C157-Pad2)": [
+   "RF"
+  ],
+  "Net-(C158-Pad1)": [
+   "RF"
+  ],
+  "Net-(C158-Pad2)": [
+   "RF"
+  ],
+  "Net-(C160-Pad2)": [
+   "RF"
+  ],
+  "Net-(C165-Pad1)": [
+   "RF"
+  ],
+  "Net-(C165-Pad2)": [
+   "RF"
+  ],
+  "Net-(C167-Pad1)": [
+   "RF"
+  ],
+  "Net-(C167-Pad2)": [
+   "RF"
+  ],
+  "Net-(C173-Pad2)": [
+   "RF"
+  ],
+  "Net-(C174-Pad1)": [
+   "RF"
+  ],
+  "Net-(C183-Pad1)": [
+   "RF"
+  ],
+  "Net-(C184-Pad1)": [
+   "RF"
+  ],
+  "Net-(C184-Pad2)": [
+   "RF"
+  ],
+  "Net-(C191-Pad2)": [
+   "RF"
+  ],
+  "Net-(C192-Pad2)": [
+   "RF"
+  ],
+  "Net-(C196-Pad1)": [
+   "RF"
+  ],
+  "Net-(C196-Pad2)": [
+   "RF"
+  ],
+  "Net-(C270-Pad2)": [
+   "RF"
+  ],
+  "Net-(C96-Pad2)": [
+   "RF"
+  ],
+  "Net-(C99-Pad1)": [
+   "RF"
+  ],
+  "Net-(IC22-IN+)": [
+   "RF"
+  ],
+  "Net-(IC22-IN-)": [
+   "RF"
+  ],
+  "Net-(IC22-OUT+)": [
+   "RF"
+  ],
+  "Net-(IC22-OUT-)": [
+   "RF"
+  ],
+  "Net-(IC23-+)": [
+   "RF"
+  ],
+  "Net-(IC23--)": [
+   "RF"
+  ],
+  "Net-(IC24-IN+)": [
+   "RF"
+  ],
+  "Net-(IC24-IN-)": [
+   "RF"
+  ],
+  "Net-(IC24-OUT+)": [
+   "RF"
+  ],
+  "Net-(IC24-OUT-)": [
+   "RF"
+  ],
+  "Net-(IC26-AIN+)": [
+   "RF"
+  ],
+  "Net-(IC26-AIN-)": [
+   "RF"
+  ],
+  "Net-(IC27-IN+)": [
+   "RF"
+  ],
+  "Net-(IC27-IN-)": [
+   "RF"
+  ],
+  "Net-(IC27-OUT+)": [
+   "RF"
+  ],
+  "Net-(IC27-OUT-)": [
+   "RF"
+  ],
+  "Net-(IC28-+)": [
+   "RF"
+  ],
+  "Net-(IC28--)": [
+   "RF"
+  ],
+  "Net-(IC29-IN+)": [
+   "RF"
+  ],
+  "Net-(IC29-IN-)": [
+   "RF"
+  ],
+  "Net-(IC29-LO+)": [
+   "RF"
+  ],
+  "Net-(IC29-OUT+)": [
+   "RF"
+  ],
+  "Net-(IC29-OUT-)": [
+   "RF"
+  ],
+  "Net-(IC31-AIN+)": [
+   "RF"
+  ],
+  "Net-(IC31-AIN-)": [
+   "RF"
+  ],
+  "Net-(IC32-+)": [
+   "RF"
+  ],
+  "Net-(IC32--)": [
+   "RF"
+  ],
+  "Net-(IC33-IN+)": [
+   "RF"
+  ],
+  "Net-(IC33-IN-)": [
+   "RF"
+  ],
+  "Net-(IC33-LO+)": [
+   "RF"
+  ],
+  "Net-(IC33-OUT+)": [
+   "RF"
+  ],
+  "Net-(IC33-OUT-)": [
+   "RF"
+  ],
+  "Net-(IC35-AIN+)": [
+   "RF"
+  ],
+  "Net-(IC35-AIN-)": [
+   "RF"
+  ],
+  "Net-(IC36-IN+)": [
+   "RF"
+  ],
+  "Net-(IC36-IN-)": [
+   "RF"
+  ],
+  "Net-(IC36-OUT+)": [
+   "RF"
+  ],
+  "Net-(IC36-OUT-)": [
+   "RF"
+  ],
+  "Net-(R40-Pad1)": [
+   "RF"
+  ],
+  "Net-(R45-Pad2)": [
+   "RF"
+  ],
+  "Net-(T1-IN+)": [
+   "RF"
+  ],
+  "Net-(T1-IN-)": [
+   "RF"
+  ],
+  "Net-(T1-OUT+)": [
+   "RF"
+  ],
+  "Net-(T1-OUT-)": [
+   "RF"
+  ],
+  "Net-(T2-IN+)": [
+   "RF"
+  ],
+  "Net-(T2-IN-)": [
+   "RF"
+  ],
+  "Net-(T2-OUT+)": [
+   "RF"
+  ],
+  "Net-(T2-OUT-)": [
+   "RF"
+  ],
+  "Net-(T3-IN+)": [
+   "RF"
+  ],
+  "Net-(T3-IN-)": [
+   "RF"
+  ],
+  "Net-(T3-OUT-)": [
+   "RF"
+  ],
+  "PORT1SRC": [
+   "RF"
+  ],
+  "PORT2SRC": [
+   "RF"
+  ],
+  "REFSRC": [
+   "RF"
+  ],
+  "SOURCE_HIGHBAND": [
+   "RF"
+  ],
+  "SOURCE_REF": [
+   "RF"
+  ]
+ },
+ "author": {
+  "via": [
+   0.5,
+   0.25
+  ],
+  "track": 0.3,
+  "track_min": 0.15,
+  "vias": 2932,
+  "via_sizes": [
+   [
+    [
+     0.5,
+     0.25
+    ],
+    2908
+   ],
+   [
+    [
+     4.5,
+     3.2
+    ],
+    21
+   ],
+   [
+    [
+     0.6,
+     0.3
+    ],
+    3
+   ]
+  ]
+ }
+}

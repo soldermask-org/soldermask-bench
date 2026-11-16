@@ -1,0 +1,146 @@
+{
+ "source": "kicad_pro",
+ "min": {
+  "max_error": 0.005,
+  "min_clearance": 0.09,
+  "min_connection": 0.0,
+  "min_copper_edge_clearance": 0.3,
+  "min_hole_clearance": 0.254,
+  "min_hole_to_hole": 0.5,
+  "min_microvia_diameter": 0.0,
+  "min_microvia_drill": 0.0,
+  "min_resolved_spokes": 2,
+  "min_silk_clearance": 0.0,
+  "min_text_height": 0.8,
+  "min_text_thickness": 0.08,
+  "min_through_hole_diameter": 0.3,
+  "min_track_width": 0.09,
+  "min_via_annular_width": 0.05,
+  "min_via_diameter": 0.4,
+  "solder_mask_to_copper_clearance": 0.0,
+  "use_height_for_length_calcs": true
+ },
+ "default": {
+  "clearance": 0.1,
+  "track_width": 0.2,
+  "via_diameter": 0.4,
+  "via_drill": 0.3,
+  "diff_pair_width": 0.2,
+  "diff_pair_gap": 0.25
+ },
+ "classes": [
+  {
+   "name": "Default",
+   "clearance": 0.1,
+   "track_width": 0.2,
+   "via_diameter": 0.4,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "PCIe Signal",
+   "clearance": 0.1016,
+   "track_width": 0.117856,
+   "via_diameter": 0.4,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.117856,
+   "diff_pair_gap": 0.1016,
+   "nets": null
+  },
+  {
+   "name": "USB",
+   "clearance": 0.1,
+   "track_width": 0.11176,
+   "via_diameter": 0.4,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.11176,
+   "diff_pair_gap": 0.1016,
+   "nets": null
+  }
+ ],
+ "patterns": [
+  {
+   "netclass": "PCIe Signal",
+   "pattern": "/TX*"
+  },
+  {
+   "netclass": "PCIe Signal",
+   "pattern": "/RX*"
+  },
+  {
+   "netclass": "PCIe Signal",
+   "pattern": "/PCIe Redriver/TX*"
+  },
+  {
+   "netclass": "PCIe Signal",
+   "pattern": "/CLKP"
+  },
+  {
+   "netclass": "PCIe Signal",
+   "pattern": "/CLKN"
+  },
+  {
+   "netclass": "USB",
+   "pattern": "/USB Hub/SSTX*"
+  },
+  {
+   "netclass": "USB",
+   "pattern": "/C_*"
+  },
+  {
+   "netclass": "USB",
+   "pattern": "*USB_DFP*_TX*"
+  },
+  {
+   "netclass": "USB",
+   "pattern": "*USB_DFP*_RX*"
+  },
+  {
+   "netclass": "USB",
+   "pattern": "*USB_DFP*_D*"
+  },
+  {
+   "netclass": "PCIe Signal",
+   "pattern": "*HSO*"
+  },
+  {
+   "netclass": "PCIe Signal",
+   "pattern": "*HSI*"
+  }
+ ],
+ "assignments": {},
+ "author": {
+  "via": [
+   0.4,
+   0.3
+  ],
+  "track": 0.2,
+  "track_min": 0.1118,
+  "vias": 712,
+  "via_sizes": [
+   [
+    [
+     0.4,
+     0.3
+    ],
+    403
+   ],
+   [
+    [
+     0.5,
+     0.3
+    ],
+    293
+   ],
+   [
+    [
+     1.0,
+     0.5
+    ],
+    16
+   ]
+  ]
+ }
+}

@@ -1,0 +1,337 @@
+(pcb "task.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.6")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer In1.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (layer In2.Cu
+      (type signal)
+      (property
+        (index 2)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 3)
+      )
+    )
+    (boundary
+      (path pcb 0  126000 -102000  104500 -102000  104500 -60000  126000 -60000
+            126000 -102000)
+    )
+    (via "Via[0-3]_600:300_um")
+    (rule
+      (width 127)
+      (clearance 127)
+      (clearance 31.75 (type smd_smd))
+    )
+  )
+  (placement
+    (component RespiraWorks_Std:LED_0805_2012Metric
+      (place D1 115500 -91000 front 90 (PN Green))
+      (place D2 122000 -81000 front 90 (PN Green))
+      (place D4 122000 -73000.001 front 90 (PN Red))
+      (place D5 115000 -81000 front 90 (PN Green))
+      (place D6 115000 -77000 front 90 (PN Yellow))
+      (place D7 114999.999 -73000 front 90 (PN Red))
+      (place D3 122000 -77000 front 90 (PN Yellow))
+    )
+    (component MountingHole:MountingHole_2.7mm
+      (place H1 107500 -63000 front 0 (PN M2.5))
+      (place H2 107500 -99000 front 0 (PN M2.5))
+      (place H3 123000 -63000 front 0 (PN M2.5))
+      (place H4 123000 -99000 front 0 (PN M2.5))
+    )
+    (component RespiraWorks_Std:R_0603_1608Metric
+      (place R1 112000 -88500 front 0 (PN 1k))
+    )
+    (component RespiraWorks_Std:R_0603_1608Metric::1
+      (place R2 120000 -81000 front 90 (PN 1k))
+      (place R4 120000 -73000 front 90 (PN 1k))
+      (place R7 113000 -73000 front 90 (PN 1k))
+    )
+    (component RespiraWorks_Std:R_0603_1608Metric::2
+      (place R3 120000 -77000 front -90 (PN 1k))
+      (place R5 113000 -81000 front -90 (PN 1k))
+      (place R6 113000 -77000 front -90 (PN 1k))
+    )
+    (component "RespiraWorks_Std:Molex_Micro-Fit_3.0_43650-0815_1x08_P3.00mm_Vertical"
+      (place J1 108000 -91500 back 270 (PN "Cable to from main board"))
+    )
+    (component "RespiraWorks:RespiraWorks-Logo-With-Text-16mm"
+      (place G*** 117500 -78000 back 0 (PN LOGO))
+    )
+  )
+  (library
+    (image RespiraWorks_Std:LED_0805_2012Metric
+      (outline (polygon signal 0  -1675 -945  -1675 945  1675 945  1675 -945))
+      (outline (path signal 120  1000 960  -1685 960))
+      (outline (path signal 120  -1685 960  -1685 -960))
+      (outline (path signal 120  -250 600  -250 -600))
+      (outline (path signal 120  250 500  250 -500))
+      (outline (path signal 120  -250 0  250 500))
+      (outline (path signal 120  250 -500  -250 0))
+      (outline (path signal 120  -1685 -960  1000 -960))
+      (outline (path signal 100  1000 600  -700 600))
+      (outline (path signal 100  -700 600  -1000 300))
+      (outline (path signal 100  200 350  200 -350))
+      (outline (path signal 100  -300 350  -300 -350))
+      (outline (path signal 100  -1000 300  -1000 -600))
+      (outline (path signal 100  200 0  450 0))
+      (outline (path signal 100  -300 0  200 350))
+      (outline (path signal 100  -300 0  -500 0))
+      (outline (path signal 100  200 -350  -300 0))
+      (outline (path signal 100  1000 -600  1000 600))
+      (outline (path signal 100  -1000 -600  1000 -600))
+      (pin RoundRect[T]Pad_975.000000x1400.000000_244.678000_um_0.000000_0 1 -937.5 0)
+      (pin RoundRect[T]Pad_975.000000x1400.000000_244.678000_um_0.000000_0 2 937.5 0)
+    )
+    (image MountingHole:MountingHole_2.7mm
+      (outline (polygon signal 0  342.187 2927.56  679.736 2868.04  1008.1 2769.74  1322.83 2633.97
+            1619.67 2462.59  1894.61 2257.91  2143.93 2022.69  2364.25 1760.12
+            2552.6 1473.75  2706.43 1167.44  2823.66 845.352  2902.71 511.827
+            2942.51 171.344  2945 0  2942.51 -171.343  2902.71 -511.826
+            2823.66 -845.351  2706.43 -1167.44  2552.6 -1473.74  2364.25 -1760.12
+            2143.93 -2022.69  1894.61 -2257.91  1619.67 -2462.59  1322.83 -2633.97
+            1008.1 -2769.73  679.736 -2868.04  342.187 -2927.56  0 -2947.49
+            -342.188 -2927.56  -679.737 -2868.04  -1008.1 -2769.73  -1322.83 -2633.97
+            -1619.67 -2462.59  -1894.61 -2257.91  -2143.93 -2022.69  -2364.25 -1760.12
+            -2552.6 -1473.74  -2706.44 -1167.44  -2823.67 -845.351  -2902.71 -511.826
+            -2942.5 -171.383  -2942.5 171.384  -2902.71 511.827  -2823.67 845.352
+            -2706.44 1167.44  -2552.6 1473.75  -2364.25 1760.12  -2143.93 2022.69
+            -1894.61 2257.91  -1619.67 2462.59  -1322.83 2633.97  -1008.1 2769.74
+            -679.737 2868.04  -342.188 2927.56  0 2947.49))
+      (outline (path signal 150  2700 0  2681.05 -319.338  2624.46 -634.192  2531.03 -940.144
+            2402.07 -1232.9  2239.39 -1508.35  2045.28 -1762.62  1822.45 -1992.15
+            1574.05 -2193.72  1303.54 -2364.48  1014.73 -2502.06  711.685 -2604.52
+            398.646 -2670.41  80.01 -2698.81  -239.749 -2689.34  -556.142 -2642.1
+            -864.729 -2557.78  -1161.18 -2437.55  -1441.32 -2283.11  -1701.24 -2096.61
+            -1937.27 -1880.69  -2146.11 -1638.36  -2324.82 -1373.03  -2470.89 -1088.43
+            -2582.28 -788.553  -2657.42 -477.604  -2695.26 -159.95  -2695.26 159.95
+            -2657.42 477.604  -2582.28 788.553  -2470.89 1088.43  -2324.82 1373.03
+            -2146.11 1638.36  -1937.27 1880.69  -1701.24 2096.61  -1441.32 2283.11
+            -1161.18 2437.55  -864.729 2557.78  -556.142 2642.1  -239.749 2689.34
+            80.01 2698.81  398.646 2670.41  711.685 2604.52  1014.73 2502.06
+            1303.54 2364.48  1574.05 2193.72  1822.45 1992.15  2045.28 1762.62
+            2239.39 1508.35  2402.07 1232.9  2531.03 940.144  2624.46 634.192
+            2681.05 319.338  2700 0))
+      (keepout "" (circle F.Cu 3200))
+      (keepout "" (circle In1.Cu 3200))
+      (keepout "" (circle In2.Cu 3200))
+      (keepout "" (circle B.Cu 3200))
+    )
+    (image RespiraWorks_Std:R_0603_1608Metric
+      (outline (polygon signal 0  1475 -725  -1475 -725  -1475 725  1475 725))
+      (outline (path signal 120  -162.779 510  162.779 510))
+      (outline (path signal 120  -162.779 -510  162.779 -510))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  -800 -400  -800 400))
+      (outline (path signal 100  800 400  800 -400))
+      (outline (path signal 100  800 -400  -800 -400))
+      (pin RoundRect[T]Pad_875.000000x950.000000_219.582000_um_0.000000_0 1 -787.5 0)
+      (pin RoundRect[T]Pad_875.000000x950.000000_219.582000_um_0.000000_0 2 787.5 0)
+    )
+    (image RespiraWorks_Std:R_0603_1608Metric::1
+      (outline (polygon signal 0  -1475 -725  -1475 725  1475 725  1475 -725))
+      (outline (path signal 120  -162.779 510  162.779 510))
+      (outline (path signal 120  -162.779 -510  162.779 -510))
+      (outline (path signal 100  800 400  800 -400))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  800 -400  -800 -400))
+      (outline (path signal 100  -800 -400  -800 400))
+      (pin RoundRect[T]Pad_875.000000x950.000000_219.582000_um_0.000000_0 1 -787.5 0)
+      (pin RoundRect[T]Pad_875.000000x950.000000_219.582000_um_0.000000_0 2 787.5 0)
+    )
+    (image RespiraWorks_Std:R_0603_1608Metric::2
+      (outline (polygon signal 0  1475 725  1475 -725  -1475 -725  -1475 725))
+      (outline (path signal 120  -162.779 -510  162.779 -510))
+      (outline (path signal 120  -162.779 510  162.779 510))
+      (outline (path signal 100  -800 -400  -800 400))
+      (outline (path signal 100  800 -400  -800 -400))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  800 400  800 -400))
+      (pin RoundRect[T]Pad_875.000000x950.000000_219.582000_um_0.000000_0 1 -787.5 0)
+      (pin RoundRect[T]Pad_875.000000x950.000000_219.582000_um_0.000000_0 2 787.5 0)
+    )
+    (image "RespiraWorks_Std:Molex_Micro-Fit_3.0_43650-0815_1x08_P3.00mm_Vertical"
+      (outline (polygon signal 0  24815 2965  24815 -3795  -3815 -3795  -3815 2965))
+      (outline (path signal 120  24435 -2010  24435 1065))
+      (outline (path signal 120  -3435 -2010  24435 -2010))
+      (outline (path signal 120  -3435 1065  -3435 -2010))
+      (outline (path signal 120  23015 2080  23015 2580))
+      (outline (path signal 120  -2015 2080  23015 2080))
+      (outline (path signal 120  23015 2580  22995 2580))
+      (outline (path signal 120  -1995 2580  -2015 2580))
+      (outline (path signal 120  -2015 2580  -2015 2080))
+      (outline (path signal 100  11200 -3300  11200 -1900))
+      (outline (path signal 100  9800 -3300  11200 -3300))
+      (outline (path signal 100  24325 -1900  24325 2470))
+      (outline (path signal 100  9800 -1900  9800 -3300))
+      (outline (path signal 100  -3325 -1900  24325 -1900))
+      (outline (path signal 100  0 1262.89  500 1970))
+      (outline (path signal 100  24325 1340  23125 1970))
+      (outline (path signal 100  -3325 1340  -2125 1970))
+      (outline (path signal 100  23125 1970  -2125 1970))
+      (outline (path signal 100  -500 1970  0 1262.89))
+      (outline (path signal 100  -2125 1970  -2125 2470))
+      (outline (path signal 100  24325 2470  23125 2470))
+      (outline (path signal 100  23125 2470  23125 1970))
+      (outline (path signal 100  -2125 2470  -3325 2470))
+      (outline (path signal 100  -3325 2470  -3325 -1900))
+      (pin RoundRect[A]Pad_1500.000000x2020.000000_250.951000_um_0.000000_0 1 0 0)
+      (pin Oval[A]Pad_1500.000000x2020.000000_um 2 3000 0)
+      (pin Oval[A]Pad_1500.000000x2020.000000_um 3 6000 0)
+      (pin Oval[A]Pad_1500.000000x2020.000000_um 4 9000 0)
+      (pin Oval[A]Pad_1500.000000x2020.000000_um 5 12000 0)
+      (pin Oval[A]Pad_1500.000000x2020.000000_um 6 15000 0)
+      (pin Oval[A]Pad_1500.000000x2020.000000_um 7 18000 0)
+      (pin Oval[A]Pad_1500.000000x2020.000000_um 8 21000 0)
+      (keepout "" (circle F.Cu 1770 -3000 1960))
+      (keepout "" (circle In1.Cu 1770 -3000 1960))
+      (keepout "" (circle In2.Cu 1770 -3000 1960))
+      (keepout "" (circle B.Cu 1770 -3000 1960))
+      (keepout "" (circle F.Cu 1770 24000 1960))
+      (keepout "" (circle In1.Cu 1770 24000 1960))
+      (keepout "" (circle In2.Cu 1770 24000 1960))
+      (keepout "" (circle B.Cu 1770 24000 1960))
+    )
+    (image "RespiraWorks:RespiraWorks-Logo-With-Text-16mm"
+    )
+    (padstack Oval[A]Pad_1500.000000x2020.000000_um
+      (shape (path F.Cu 1500  0 -260  0 260))
+      (shape (path In1.Cu 1500  0 -260  0 260))
+      (shape (path In2.Cu 1500  0 -260  0 260))
+      (shape (path B.Cu 1500  0 -260  0 260))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_875.000000x950.000000_219.582000_um_0.000000_0
+      (shape (polygon F.Cu 0  -438.332 256.25  -421.617 340.28  -374.018 411.518  -302.78 459.117
+            -218.75 475.832  218.75 475.832  302.78 459.117  374.018 411.518
+            421.617 340.28  438.332 256.25  438.332 -256.25  421.617 -340.28
+            374.018 -411.518  302.78 -459.117  218.75 -475.832  -218.75 -475.832
+            -302.78 -459.117  -374.018 -411.518  -421.617 -340.28  -438.332 -256.25
+            -438.332 256.25))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_975.000000x1400.000000_244.678000_um_0.000000_0
+      (shape (polygon F.Cu 0  -488.428 456.25  -469.803 549.884  -416.763 629.263  -337.384 682.303
+            -243.75 700.928  243.75 700.928  337.384 682.303  416.763 629.263
+            469.803 549.884  488.428 456.25  488.428 -456.25  469.803 -549.884
+            416.763 -629.263  337.384 -682.303  243.75 -700.928  -243.75 -700.928
+            -337.384 -682.303  -416.763 -629.263  -469.803 -549.884  -488.428 -456.25
+            -488.428 456.25))
+      (attach off)
+    )
+    (padstack RoundRect[A]Pad_1500.000000x2020.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -750.951 760  -731.848 856.035  -677.449 937.449  -596.035 991.848
+            -499.999 1010.95  500 1010.95  596.035 991.848  677.449 937.449
+            731.848 856.035  750.95 759.999  750.951 -760  731.848 -856.035
+            677.449 -937.449  596.035 -991.848  499.999 -1010.95  -500 -1010.95
+            -596.035 -991.848  -677.449 -937.449  -731.848 -856.035  -750.95 -759.999
+            -750.951 760))
+      (shape (polygon In1.Cu 0  -750.951 760  -731.848 856.035  -677.449 937.449  -596.035 991.848
+            -499.999 1010.95  500 1010.95  596.035 991.848  677.449 937.449
+            731.848 856.035  750.95 759.999  750.951 -760  731.848 -856.035
+            677.449 -937.449  596.035 -991.848  499.999 -1010.95  -500 -1010.95
+            -596.035 -991.848  -677.449 -937.449  -731.848 -856.035  -750.95 -759.999
+            -750.951 760))
+      (shape (polygon In2.Cu 0  -750.951 760  -731.848 856.035  -677.449 937.449  -596.035 991.848
+            -499.999 1010.95  500 1010.95  596.035 991.848  677.449 937.449
+            731.848 856.035  750.95 759.999  750.951 -760  731.848 -856.035
+            677.449 -937.449  596.035 -991.848  499.999 -1010.95  -500 -1010.95
+            -596.035 -991.848  -677.449 -937.449  -731.848 -856.035  -750.95 -759.999
+            -750.951 760))
+      (shape (polygon B.Cu 0  -750.951 760  -731.848 856.035  -677.449 937.449  -596.035 991.848
+            -499.999 1010.95  500 1010.95  596.035 991.848  677.449 937.449
+            731.848 856.035  750.95 759.999  750.951 -760  731.848 -856.035
+            677.449 -937.449  596.035 -991.848  499.999 -1010.95  -500 -1010.95
+            -596.035 -991.848  -677.449 -937.449  -731.848 -856.035  -750.95 -759.999
+            -750.951 760))
+      (attach off)
+    )
+    (padstack "Via[0-3]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle In1.Cu 600))
+      (shape (circle In2.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins D1-1 D2-1 D4-1 D5-1 D6-1 D7-1 D3-1 J1-1)
+    )
+    (net "Net-(D1-Pad2)"
+      (pins D1-2 R1-2)
+    )
+    (net "Net-(D2-Pad2)"
+      (pins D2-2 R2-2)
+    )
+    (net "Net-(D4-Pad2)"
+      (pins D4-2 R4-2)
+    )
+    (net "Net-(D5-Pad2)"
+      (pins D5-2 R5-2)
+    )
+    (net "Net-(D6-Pad2)"
+      (pins D6-2 R6-2)
+    )
+    (net +5V
+      (pins R1-1 J1-2)
+    )
+    (net "/CC-LED-G"
+      (pins R2-1 J1-3)
+    )
+    (net "/CC-LED-Y"
+      (pins R3-1 J1-5)
+    )
+    (net "Net-(D3-Pad2)"
+      (pins R3-2 D3-2)
+    )
+    (net "/CC-LED-R"
+      (pins R4-1 J1-4)
+    )
+    (net "/UI-LED-G"
+      (pins R5-1 J1-6)
+    )
+    (net "/UI-LED-Y"
+      (pins R6-1 J1-8)
+    )
+    (net "/UI-LED-R"
+      (pins R7-1 J1-7)
+    )
+    (net "Net-(D7-Pad2)"
+      (pins R7-2 D7-2)
+    )
+    (class kicad_default +5V "/CC-LED-G" "/CC-LED-R" "/CC-LED-Y" "/UI-LED-G"
+      "/UI-LED-R" "/UI-LED-Y" GND "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)"
+      "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)"
+      (circuit
+        (use_via "Via[0-3]_600:300_um")
+      )
+      (rule
+        (width 127)
+        (clearance 127)
+      )
+    )
+  )
+  (wiring
+  )
+)

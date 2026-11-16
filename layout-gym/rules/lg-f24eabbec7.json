@@ -1,0 +1,572 @@
+{
+ "source": "kicad_pro",
+ "min": {
+  "max_error": 0.005,
+  "min_clearance": 0.15,
+  "min_connection": 0.15,
+  "min_copper_edge_clearance": 0.5,
+  "min_groove_width": 0.0,
+  "min_hole_clearance": 0.19,
+  "min_hole_to_hole": 0.25,
+  "min_microvia_diameter": 0.2,
+  "min_microvia_drill": 0.1,
+  "min_resolved_spokes": 2,
+  "min_silk_clearance": 0.0,
+  "min_text_height": 0.8,
+  "min_text_thickness": 0.08,
+  "min_through_hole_diameter": 0.2,
+  "min_track_width": 0.15,
+  "min_via_annular_width": 0.1,
+  "min_via_diameter": 0.2,
+  "solder_mask_to_copper_clearance": 0.0,
+  "use_height_for_length_calcs": true
+ },
+ "default": {
+  "clearance": 0.15,
+  "track_width": 0.15,
+  "via_diameter": 0.4,
+  "via_drill": 0.2,
+  "diff_pair_width": 0.2,
+  "diff_pair_gap": 0.25
+ },
+ "classes": [
+  {
+   "name": "Default",
+   "clearance": 0.15,
+   "track_width": 0.15,
+   "via_diameter": 0.4,
+   "via_drill": 0.2,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "CAN120D",
+   "clearance": 0.15,
+   "track_width": 0.15,
+   "via_diameter": 0.4,
+   "via_drill": 0.2,
+   "diff_pair_width": 0.15,
+   "diff_pair_gap": 0.4,
+   "nets": null
+  },
+  {
+   "name": "GROUND",
+   "clearance": 0.15,
+   "track_width": 0.25,
+   "via_diameter": 0.6,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "POWER",
+   "clearance": 0.15,
+   "track_width": 0.6,
+   "via_diameter": 0.6,
+   "via_drill": 0.3,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "RF50",
+   "clearance": 0.15,
+   "track_width": 0.185,
+   "via_diameter": 0.4,
+   "via_drill": 0.2,
+   "diff_pair_width": 0.185,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "USB90D",
+   "clearance": 0.15,
+   "track_width": 0.185,
+   "via_diameter": 0.4,
+   "via_drill": 0.2,
+   "diff_pair_width": 0.185,
+   "diff_pair_gap": 0.195,
+   "nets": null
+  }
+ ],
+ "patterns": [],
+ "assignments": {
+  "+1.8V": [
+   "Power"
+  ],
+  "+1V2_D": [
+   "POWER"
+  ],
+  "+1V8_RF": [
+   "POWER"
+  ],
+  "+3.3V": [
+   "Power"
+  ],
+  "+3V3_CM5": [
+   "POWER"
+  ],
+  "+3V3_D": [
+   "POWER"
+  ],
+  "+3V3_RF": [
+   "POWER"
+  ],
+  "+3V3_SD": [
+   "POWER"
+  ],
+  "+3V6_RF": [
+   "POWER"
+  ],
+  "+3V6_RF_PA": [
+   "POWER"
+  ],
+  "+4V2_RF": [
+   "POWER"
+  ],
+  "+4V2_RF_LNA": [
+   "POWER"
+  ],
+  "+5V": [
+   "POWER"
+  ],
+  "+5V_CSKB": [
+   "POWER"
+  ],
+  "+5V_EFUSE_D": [
+   "POWER"
+  ],
+  "+5V_EFUSE_RF": [
+   "POWER"
+  ],
+  "+5V_USB": [
+   "POWER"
+  ],
+  "/1.0-digital/1.2-interfaces/CAN_A_N": [
+   "CAN120D"
+  ],
+  "/1.0-digital/1.2-interfaces/CAN_A_P": [
+   "CAN120D"
+  ],
+  "/1.0-digital/1.2-interfaces/CAN_B_N": [
+   "CAN120D"
+  ],
+  "/1.0-digital/1.2-interfaces/CAN_B_P": [
+   "CAN120D"
+  ],
+  "/1.0-digital/1.3-usb/USB2_DATA_N": [
+   "USB90D"
+  ],
+  "/1.0-digital/1.3-usb/USB2_DATA_P": [
+   "USB90D"
+  ],
+  "/1.0-digital/1.3-usb/VUSB": [
+   "POWER"
+  ],
+  "/1.0-digital/1.3-usb/VUSB_NC": [
+   "POWER"
+  ],
+  "/2.0-radio/2.1-baseband/TCXO.VCC": [
+   "Power"
+  ],
+  "/2.0-radio/2.2-radio-a/RADIO_A_RFI": [
+   "RF50"
+  ],
+  "/2.0-radio/2.2-radio-a/RADIO_A_RFO": [
+   "RF50"
+  ],
+  "/2.0-radio/2.2-radio-a/SX1250.DCC_SW": [
+   "POWER"
+  ],
+  "/2.0-radio/2.2-radio-a/SX1250.RFI_N": [
+   "RF50"
+  ],
+  "/2.0-radio/2.2-radio-a/SX1250.RFI_P": [
+   "RF50"
+  ],
+  "/2.0-radio/2.2-radio-a/SX1250.RFO": [
+   "RF50"
+  ],
+  "/2.0-radio/2.2-radio-a/SX1250.VREG": [
+   "POWER"
+  ],
+  "/2.0-radio/2.2-radio-a/SX1250.VR_PA": [
+   "POWER"
+  ],
+  "/2.0-radio/2.3-radio-b/RADIO_B_RFI": [
+   "RF50"
+  ],
+  "/2.0-radio/2.3-radio-b/SX1250.DCC_SW": [
+   "POWER"
+  ],
+  "/2.0-radio/2.3-radio-b/SX1250.RFI_N": [
+   "RF50"
+  ],
+  "/2.0-radio/2.3-radio-b/SX1250.RFI_P": [
+   "RF50"
+  ],
+  "/2.0-radio/2.3-radio-b/SX1250.RFO": [
+   "RF50"
+  ],
+  "/2.0-radio/2.3-radio-b/SX1250.VREG": [
+   "POWER"
+  ],
+  "/2.0-radio/2.4-radio-lbt/RADIO_LBT_RFI": [
+   "RF50"
+  ],
+  "/2.0-radio/2.4-radio-lbt/SX1261.DCC_SW": [
+   "POWER"
+  ],
+  "/2.0-radio/2.4-radio-lbt/SX1261.RFI_N": [
+   "RF50"
+  ],
+  "/2.0-radio/2.4-radio-lbt/SX1261.RFI_P": [
+   "RF50"
+  ],
+  "/2.0-radio/2.4-radio-lbt/SX1261.RFO": [
+   "RF50"
+  ],
+  "/2.0-radio/2.4-radio-lbt/SX1261.VREG": [
+   "POWER"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/2.5.3-rf-filter/P1": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/PA.IN": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/PA.OUT": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/PA.VCTRL": [
+   "POWER"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/PA.VDD": [
+   "POWER"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/PA.VREF1": [
+   "POWER"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/PA.VREF2": [
+   "POWER"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/PA_FILT.IN": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/RFIO": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.1-rf-tx-path/TX_OUT": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/LNA.I": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/LNA.MA": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/LNA.O": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/LNA.VDD": [
+   "POWER"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/RFSPL": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/RX": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/SAW1": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/SAW2": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/SPLT": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/SPLT.IN": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.2-rf-rx-path/SPLT.MA": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.3-rf-filter/P1": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/2.5.3-rf-filter/P2": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/ANT": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/ANTMATCH": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/ANT_MATCH": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/LNA.I": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/LNA.O": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/PA.IN": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/PA.OUT": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFIO": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFRX": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFSPL": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFSW.1": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFSW.2": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFSW.IN": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFSW.IO": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFSW.RX": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFSW.TX": [
+   "RF50"
+  ],
+  "/2.0-radio/2.5-rf-frontend/RFTX": [
+   "RF50"
+  ],
+  "/2.0-radio/SX1250.RFI_N": [
+   "RF50"
+  ],
+  "/2.0-radio/SX1250.RFI_P": [
+   "RF50"
+  ],
+  "/2.0-radio/SX1250.RFO": [
+   "RF50"
+  ],
+  "/2.0-radio/TCXO.VCC": [
+   "POWER"
+  ],
+  "/2.0-radio/TCXO.VCC_SEL": [
+   "Power"
+  ],
+  "/3.0-power/3.1-efuse/5V_IN_EFUSE_RF": [
+   "POWER"
+  ],
+  "/3.0-power/3.2-psu-digital/DC1V2D.VO": [
+   "POWER"
+  ],
+  "/3.0-power/3.2-psu-digital/DC3V3D.VO": [
+   "POWER"
+  ],
+  "/3.0-power/3.3-psu-rf/DC3V3RF.VO": [
+   "POWER"
+  ],
+  "/3.0-power/3.3-psu-rf/DC3V6RF.VO": [
+   "POWER"
+  ],
+  "/3.0-power/LDO.VO": [
+   "POWER"
+  ],
+  "/LDO.VO": [
+   "Power"
+  ],
+  "/LR1110/LR1110.RFIO_HF": [
+   "RF50"
+  ],
+  "/LR1110/LR1110.RFI_N": [
+   "RF50"
+  ],
+  "/LR1110/LR1110.RFI_N_LF0": [
+   "RF50"
+  ],
+  "/LR1110/LR1110.RFI_P": [
+   "RF50"
+  ],
+  "/LR1110/LR1110.RFI_P_LF0": [
+   "RF50"
+  ],
+  "/LR1110/LR1110.RFO_HP_LF": [
+   "RF50"
+  ],
+  "/LR1110/LR1110.RFO_LP_LF": [
+   "RF50"
+  ],
+  "/SX1250.RFI_N": [
+   "RF50"
+  ],
+  "/SX1250.RFI_P": [
+   "RF50"
+  ],
+  "/SX1250.RFO": [
+   "RF50"
+  ],
+  "/SX1261/SX1261.RFI_N": [
+   "RF50"
+  ],
+  "/SX1261/SX1261.RFI_P": [
+   "RF50"
+  ],
+  "/SX1261/SX1261.RFO": [
+   "RF50"
+  ],
+  "/SX2150/SX1250.RFI_N": [
+   "RF50"
+  ],
+  "/SX2150/SX1250.RFI_P": [
+   "RF50"
+  ],
+  "/SX2150/SX1250.RFO": [
+   "RF50"
+  ],
+  "/TCXO.VCC": [
+   "Power"
+  ],
+  "/TCXO.VCC_SEL": [
+   "Power"
+  ],
+  "Earth": [
+   "GROUND"
+  ],
+  "GND": [
+   "GROUND"
+  ],
+  "Net-(C1002-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C1003-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C1006-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C1009-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C1011-Pad2)": [
+   "RF50"
+  ],
+  "Net-(C1301-Pad2)": [
+   "RF50"
+  ],
+  "Net-(C1501-Pad2)": [
+   "RF50"
+  ],
+  "Net-(C3-Pad2)": [
+   "RF50"
+  ],
+  "Net-(C607-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C609-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C707-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C708-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C807-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C807-Pad2)": [
+   "RF50"
+  ],
+  "Net-(C808-Pad1)": [
+   "RF50"
+  ],
+  "Net-(C808-Pad2)": [
+   "RF50"
+  ],
+  "Net-(U1-O)": [
+   "RF50"
+  ],
+  "Net-(U1102-RF1)": [
+   "RF50"
+  ],
+  "Net-(U1102-RF2)": [
+   "RF50"
+  ],
+  "Net-(U1102-RFIN)": [
+   "RF50"
+  ],
+  "Net-(U1202-V_{CC2a})": [
+   "POWER"
+  ],
+  "Net-(U1404-V_{DD})": [
+   "POWER"
+  ],
+  "Net-(U2-O)": [
+   "RF50"
+  ],
+  "Net-(U3-I)": [
+   "RF50"
+  ],
+  "Net-(U4-V_{DD})": [
+   "POWER"
+  ],
+  "Net-(U5-RF1)": [
+   "RF50"
+  ],
+  "Net-(U5-RF2)": [
+   "RF50"
+  ],
+  "Net-(U5-RFIN)": [
+   "RF50"
+  ],
+  "Net-(U6-V_{CC2a})": [
+   "POWER"
+  ],
+  "Net-(X1-OUT)": [
+   "RF50"
+  ],
+  "Net-(X2-IN)": [
+   "RF50"
+  ],
+  "Net-(X3-OUT)": [
+   "RF50"
+  ]
+ },
+ "author": {
+  "via": [
+   0.6,
+   0.3
+  ],
+  "track": 0.15,
+  "track_min": 0.15,
+  "vias": 861,
+  "via_sizes": [
+   [
+    [
+     0.6,
+     0.3
+    ],
+    589
+   ],
+   [
+    [
+     0.4,
+     0.2
+    ],
+    272
+   ]
+  ]
+ }
+}

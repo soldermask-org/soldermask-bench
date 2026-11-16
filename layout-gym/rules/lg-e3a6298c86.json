@@ -1,0 +1,338 @@
+{
+ "source": "kicad_pro",
+ "min": {
+  "allow_blind_buried_vias": false,
+  "allow_microvias": false,
+  "max_error": 0.005,
+  "min_clearance": 0.2,
+  "min_connection": 0.0,
+  "min_copper_edge_clearance": 0.5,
+  "min_hole_clearance": 0.2,
+  "min_hole_to_hole": 0.2,
+  "min_microvia_diameter": 0.2,
+  "min_microvia_drill": 0.1,
+  "min_resolved_spokes": 2,
+  "min_silk_clearance": 0.0,
+  "min_text_height": 0.5,
+  "min_text_thickness": 0.08,
+  "min_through_hole_diameter": 0.3,
+  "min_track_width": 0.15,
+  "min_via_annular_width": 0.125,
+  "min_via_diameter": 0.4,
+  "solder_mask_clearance": 0.0,
+  "solder_mask_min_width": 0.0,
+  "solder_mask_to_copper_clearance": 0.0,
+  "use_height_for_length_calcs": true
+ },
+ "default": {
+  "clearance": 0.2,
+  "track_width": 0.25,
+  "via_diameter": 0.8,
+  "via_drill": 0.4,
+  "diff_pair_width": 0.2,
+  "diff_pair_gap": 0.25
+ },
+ "classes": [
+  {
+   "name": "Default",
+   "clearance": 0.2,
+   "track_width": 0.25,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "CANs",
+   "clearance": 0.2,
+   "track_width": 0.15,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.15,
+   "diff_pair_gap": 0.3,
+   "nets": null
+  },
+  {
+   "name": "MEM_DATA",
+   "clearance": 0.2,
+   "track_width": 0.25,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "MRAM",
+   "clearance": 0.2,
+   "track_width": 0.25,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "Magnetometer",
+   "clearance": 0.2,
+   "track_width": 0.2,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "NAND_Flash",
+   "clearance": 0.2,
+   "track_width": 0.25,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "Power",
+   "clearance": 0.2,
+   "track_width": 0.3,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "RS485",
+   "clearance": 0.2,
+   "track_width": 0.15,
+   "via_diameter": 0.8,
+   "via_drill": 0.4,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  }
+ ],
+ "patterns": [
+  {
+   "netclass": "CANs",
+   "pattern": "CAN1+"
+  },
+  {
+   "netclass": "CANs",
+   "pattern": "CAN1-"
+  },
+  {
+   "netclass": "CANs",
+   "pattern": "CAN2+"
+  },
+  {
+   "netclass": "CANs",
+   "pattern": "CAN2-"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D0"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D1"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D2"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D3"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D4"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D5"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D6"
+  },
+  {
+   "netclass": "MEM_DATA",
+   "pattern": "/OBC module/MEM_D7"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A0"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A1"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A10"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A11"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A12"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A13"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A14"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A15"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A16"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A17"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A18"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A19"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A2"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A20"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A3"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A4"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A5"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A6"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A7"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A8"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_A9"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_MRAM_ENABLE"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_MRAM_OUT_ENABLE"
+  },
+  {
+   "netclass": "MRAM",
+   "pattern": "/OBC module/MEM_MRAM_WR_ENABLE"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_ADDR_ENABLE"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_BUSY_1"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_BUSY_2"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_CMD_ENABLE"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_ENABLE_1"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_ENABLE_2"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_OUT_ENABLE"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_WR_ENABLE"
+  },
+  {
+   "netclass": "NAND_Flash",
+   "pattern": "/OBC module/MEM_NAND_WR_PROTECT"
+  },
+  {
+   "netclass": "Power",
+   "pattern": "/EPS_3V3_ADCS"
+  },
+  {
+   "netclass": "Power",
+   "pattern": "/EPS_3V3_OBC"
+  },
+  {
+   "netclass": "Power",
+   "pattern": "/EPS_5V_ADM"
+  },
+  {
+   "netclass": "Power",
+   "pattern": "/EPS_5V_PANELS"
+  },
+  {
+   "netclass": "Power",
+   "pattern": "/EPS_5V_SU"
+  }
+ ],
+ "assignments": {},
+ "author": {
+  "via": [
+   0.8,
+   0.4
+  ],
+  "track": 0.25,
+  "track_min": 0.2,
+  "vias": 515,
+  "via_sizes": [
+   [
+    [
+     0.8,
+     0.4
+    ],
+    515
+   ]
+  ]
+ }
+}

@@ -1,0 +1,317 @@
+{
+ "source": "kicad_pro",
+ "min": {
+  "max_error": 0.005,
+  "min_clearance": 0.0889,
+  "min_connection": 0.0,
+  "min_copper_edge_clearance": 0.1524,
+  "min_groove_width": 0.0,
+  "min_hole_clearance": 0.1778,
+  "min_hole_to_hole": 0.25,
+  "min_microvia_diameter": 0.2,
+  "min_microvia_drill": 0.1,
+  "min_resolved_spokes": 2,
+  "min_silk_clearance": 0.0,
+  "min_text_height": 0.7,
+  "min_text_thickness": 0.08,
+  "min_through_hole_diameter": 0.2,
+  "min_track_width": 0.09,
+  "min_via_annular_width": 0.1,
+  "min_via_diameter": 0.4,
+  "solder_mask_to_copper_clearance": 0.0,
+  "use_height_for_length_calcs": true
+ },
+ "default": {
+  "clearance": 0.1,
+  "track_width": 0.1524,
+  "via_diameter": 0.4,
+  "via_drill": 0.2,
+  "diff_pair_width": 0.1,
+  "diff_pair_gap": 0.2
+ },
+ "classes": [
+  {
+   "name": "Default",
+   "clearance": 0.1,
+   "track_width": 0.1524,
+   "via_diameter": 0.4,
+   "via_drill": 0.2,
+   "diff_pair_width": 0.1,
+   "diff_pair_gap": 0.2,
+   "nets": null
+  },
+  {
+   "name": "1V1",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": null,
+   "via_drill": null,
+   "diff_pair_width": null,
+   "diff_pair_gap": null,
+   "nets": null
+  },
+  {
+   "name": "2V5",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": null,
+   "via_drill": null,
+   "diff_pair_width": null,
+   "diff_pair_gap": null,
+   "nets": null
+  },
+  {
+   "name": "3V3",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": null,
+   "via_drill": null,
+   "diff_pair_width": null,
+   "diff_pair_gap": null,
+   "nets": null
+  },
+  {
+   "name": "GND",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": null,
+   "via_drill": null,
+   "diff_pair_width": null,
+   "diff_pair_gap": null,
+   "nets": null
+  },
+  {
+   "name": "LVDS",
+   "clearance": null,
+   "track_width": 0.09,
+   "via_diameter": null,
+   "via_drill": null,
+   "diff_pair_width": 0.09,
+   "diff_pair_gap": 0.2,
+   "nets": null
+  },
+  {
+   "name": "USB",
+   "clearance": null,
+   "track_width": 0.09,
+   "via_diameter": null,
+   "via_drill": null,
+   "diff_pair_width": 0.09,
+   "diff_pair_gap": 0.2,
+   "nets": null
+  },
+  {
+   "name": "VBUS",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": null,
+   "via_drill": null,
+   "diff_pair_width": null,
+   "diff_pair_gap": null,
+   "nets": null
+  }
+ ],
+ "patterns": [
+  {
+   "netclass": "3V3",
+   "pattern": "+3V3"
+  },
+  {
+   "netclass": "GND",
+   "pattern": "GND"
+  },
+  {
+   "netclass": "VBUS",
+   "pattern": "VBUS"
+  },
+  {
+   "netclass": "2V5",
+   "pattern": "+2V5"
+  },
+  {
+   "netclass": "1V1",
+   "pattern": "+1V1"
+  },
+  {
+   "netclass": "USB",
+   "pattern": "/*X*_*"
+  },
+  {
+   "netclass": "LVDS",
+   "pattern": "/SER_CLK*"
+  },
+  {
+   "netclass": "LVDS",
+   "pattern": "/IO_*"
+  },
+  {
+   "netclass": "USB",
+   "pattern": "*USB*"
+  }
+ ],
+ "assignments": {
+  "/CC_CFG_CTRL_CLK": [
+   "50 Ohm"
+  ],
+  "/CC_CFG_CTRL_EN": [
+   "50 Ohm"
+  ],
+  "/CC_CFG_CTRL_VALID": [
+   "50 Ohm"
+  ],
+  "/CLOCK_SYS": [
+   "50 Ohm"
+  ],
+  "/C_TX1_N": [
+   "100 Ohm"
+  ],
+  "/C_TX1_P": [
+   "100 Ohm"
+  ],
+  "/FLASH_CLK": [
+   "50 Ohm"
+  ],
+  "/FLASH_S0": [
+   "50 Ohm"
+  ],
+  "/FLASH_S1": [
+   "50 Ohm"
+  ],
+  "/FLASH_S2": [
+   "50 Ohm"
+  ],
+  "/FLASH_S3": [
+   "50 Ohm"
+  ],
+  "/FPGA_USB_DN": [
+   "USB"
+  ],
+  "/FPGA_USB_DP": [
+   "USB"
+  ],
+  "/GPIO20_GPOUT0": [
+   "50 Ohm"
+  ],
+  "/GPIO21_GPOUT0": [
+   "50 Ohm"
+  ],
+  "/GPIO22_GPOUT1": [
+   "50 Ohm"
+  ],
+  "/GPIO23_GPOUT1": [
+   "50 Ohm"
+  ],
+  "/HSTX_0_N": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/HSTX_0_P": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/HSTX_1_N": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/HSTX_1_P": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/HSTX_2_N": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/HSTX_2_P": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/HSTX_3_N": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/HSTX_3_P": [
+   "100 Ohm",
+   "LVDS_RTERM_ON"
+  ],
+  "/RX0": [
+   "50 Ohm"
+  ],
+  "/RX1": [
+   "50 Ohm"
+  ],
+  "/RX1_N": [
+   "100 Ohm"
+  ],
+  "/RX1_P": [
+   "100 Ohm"
+  ],
+  "/RX2_N": [
+   "100 Ohm"
+  ],
+  "/RX2_P": [
+   "100 Ohm"
+  ],
+  "/TX0": [
+   "50 Ohm"
+  ],
+  "/TX1": [
+   "50 Ohm"
+  ],
+  "/TX1_N": [
+   "100 Ohm"
+  ],
+  "/TX1_P": [
+   "100 Ohm"
+  ],
+  "/TX2_N": [
+   "100 Ohm"
+  ],
+  "/TX2_P": [
+   "100 Ohm"
+  ],
+  "/USB_DN": [
+   "USB"
+  ],
+  "/USB_DP": [
+   "USB"
+  ],
+  "/~{FLASH_CS}": [
+   "50 Ohm"
+  ],
+  "Net-(U3E-CLK0{slash}IO_SB_A8)": [
+   "50 Ohm"
+  ]
+ },
+ "author": {
+  "via": [
+   0.4,
+   0.2
+  ],
+  "track": 0.1524,
+  "track_min": 0.09,
+  "vias": 370,
+  "via_sizes": [
+   [
+    [
+     0.4,
+     0.2
+    ],
+    364
+   ],
+   [
+    [
+     0.8,
+     0.4
+    ],
+    4
+   ],
+   [
+    [
+     0.5,
+     0.3
+    ],
+    2
+   ]
+  ]
+ }
+}

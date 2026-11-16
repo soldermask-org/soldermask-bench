@@ -1,0 +1,1269 @@
+{
+ "source": "kicad_pro",
+ "min": {
+  "max_error": 0.005,
+  "min_clearance": 0.1,
+  "min_connection": 0.1,
+  "min_copper_edge_clearance": 0.25,
+  "min_groove_width": 0.0,
+  "min_hole_clearance": 0.2,
+  "min_hole_to_hole": 0.25,
+  "min_microvia_diameter": 0.2,
+  "min_microvia_drill": 0.1,
+  "min_resolved_spokes": 1,
+  "min_silk_clearance": 0.0,
+  "min_text_height": 0.6,
+  "min_text_thickness": 0.12,
+  "min_through_hole_diameter": 0.1,
+  "min_track_width": 0.1,
+  "min_via_annular_width": 0.1,
+  "min_via_diameter": 0.4,
+  "solder_mask_to_copper_clearance": 0.0,
+  "use_height_for_length_calcs": true
+ },
+ "default": {
+  "clearance": 0.1,
+  "track_width": 0.125,
+  "via_diameter": 0.45,
+  "via_drill": 0.1,
+  "diff_pair_width": 0.2,
+  "diff_pair_gap": 0.25
+ },
+ "classes": [
+  {
+   "name": "Default",
+   "clearance": 0.1,
+   "track_width": 0.125,
+   "via_diameter": 0.45,
+   "via_drill": 0.1,
+   "diff_pair_width": 0.2,
+   "diff_pair_gap": 0.25,
+   "nets": null
+  },
+  {
+   "name": "100Ohm-diff",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": 0.45,
+   "via_drill": 0.1,
+   "diff_pair_width": 0.15,
+   "diff_pair_gap": 0.2,
+   "nets": null
+  },
+  {
+   "name": "50Ohm-se",
+   "clearance": null,
+   "track_width": 0.18,
+   "via_diameter": 0.45,
+   "via_drill": 0.1,
+   "diff_pair_width": null,
+   "diff_pair_gap": null,
+   "nets": null
+  },
+  {
+   "name": "85Ohm-diff",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": 0.45,
+   "via_drill": 0.1,
+   "diff_pair_width": 0.202,
+   "diff_pair_gap": 0.187,
+   "nets": null
+  },
+  {
+   "name": "90Ohm-diff",
+   "clearance": null,
+   "track_width": null,
+   "via_diameter": 0.45,
+   "via_drill": 0.1,
+   "diff_pair_width": 0.185,
+   "diff_pair_gap": 0.195,
+   "nets": null
+  }
+ ],
+ "patterns": [],
+ "assignments": {
+  "/BIOS Flash/QSPI.IO0": [
+   "50Ohm-se"
+  ],
+  "/BIOS Flash/QSPI.IO1": [
+   "50Ohm-se"
+  ],
+  "/BIOS Flash/QSPI.IO2": [
+   "50Ohm-se"
+  ],
+  "/BIOS Flash/QSPI.IO3": [
+   "50Ohm-se"
+  ],
+  "/BIOS Flash/QSPI.SCK": [
+   "50Ohm-se"
+  ],
+  "/BIOS Flash/QSPI.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/BIOS Flash/QSPI.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/BIOS Flash/QSPI{QSPI}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_CLK_100M_0.CLK+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_CLK_100M_0.CLK-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_CLK_100M_0{PCIeREFCLK}": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_CLK_100M_1.CLK+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_CLK_100M_1.CLK-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_CLK_100M_1{PCIeREFCLK}": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX0+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX0-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX1+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX1-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX2+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX2-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX3+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.RX3-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX0+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX0-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX1+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX1-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX2+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX2-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX3+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII.TX3-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE0_SGMII{PCIE}": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX0+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX0-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX1+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX1-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX2+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX2-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX3+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.RX3-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX0+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX0-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX1+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX1-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX2+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX2-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX3+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1.TX3-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE1{PCIE}": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX0+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX0-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX1+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX1-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX2+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX2-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX3+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.RX3-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX0+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX0-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX1+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX1-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX2+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX2-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX3+": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT.TX3-": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC-SCM_PCIE_USB_SCMROOT{PCIE}": [
+   "85Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.IO0": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.IO1": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.IO2": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.IO3": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.SCK": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.~{ALERT0}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI.~{RESET}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_ESPI{eSPI}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.RXCK+": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.RXCK-": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.RXD+": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.RXD-": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.TXCK+": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.TXCK-": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.TXD+": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI.TXD-": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_LTPI{LTPI}": [
+   "100Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI.CRS_DV": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI.REF_CLK": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI.RXD0": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI.RXD1": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI.TXD0": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI.TXD1": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI.TX_EN": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_NC-SI{NC-SI}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI.IO0": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI.IO1": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI.IO2": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI.IO3": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI.SCK": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_QSPI{QSPI}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_SPI_SCMCNTRL.DI": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_SPI_SCMCNTRL.DO": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_SPI_SCMCNTRL.SCK": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_SPI_SCMCNTRL.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_SPI_SCMCNTRL.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_SPI_SCMCNTRL{SPI}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_TPM_SPI.DI": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_TPM_SPI.DO": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_TPM_SPI.SCK": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_TPM_SPI.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_TPM_SPI.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_TPM_SPI{SPI}": [
+   "50Ohm-se"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_USB1.D+": [
+   "90Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_USB1.D-": [
+   "90Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_USB1{USB}": [
+   "90Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_USB2.D+": [
+   "90Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_USB2.D-": [
+   "90Ohm-diff"
+  ],
+  "/DC-SCM 2.1 connector/DC_SCM_USB2{USB}": [
+   "90Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.RXCK+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.RXCK-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.RXD+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.RXD-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.TXCK+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.TXCK-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.TXD+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI.TXD-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.RXCK+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.RXCK-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.RXD+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.RXD-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.TXCK+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.TXCK-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.TXD+": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B.TXD-": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI_B{LTPI}": [
+   "100Ohm-diff"
+  ],
+  "/DC_SCM_LTPI{LTPI}": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI0+": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI0-": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI1+": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI1-": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI2+": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI2-": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI3+": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET.MDI3-": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/ETHERNET{ETHERNET}": [
+   "100Ohm-diff"
+  ],
+  "/Ethernet PHY/MDC": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/MDIO": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.MDC": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.MDIO": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.RXD0": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.RXD1": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.RXD2": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.RXD3": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.RX_CLK": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.RX_CTL": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.TXD0": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.TXD1": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.TXD2": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.TXD3": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.TX_CLK": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII.TX_CTL": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RGMII{RGMII}": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RXC": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RXCTL": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RXD0": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RXD1": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RXD2": [
+   "50Ohm-se"
+  ],
+  "/Ethernet PHY/RXD3": [
+   "50Ohm-se"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.RXCK+": [
+   "100Ohm-diff"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.RXCK-": [
+   "100Ohm-diff"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.RXD+": [
+   "100Ohm-diff"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.RXD-": [
+   "100Ohm-diff"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.TXCK+": [
+   "100Ohm-diff"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.TXCK-": [
+   "100Ohm-diff"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.TXD+": [
+   "100Ohm-diff"
+  ],
+  "/FPGA devkit conn/DC_SCM_LTPI_FMC.TXD-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel USB/USB1.D+": [
+   "90Ohm-diff"
+  ],
+  "/Front panel USB/USB1.D-": [
+   "90Ohm-diff"
+  ],
+  "/Front panel USB/USB1{USB}": [
+   "90Ohm-diff"
+  ],
+  "/Front panel Video/AUX+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/AUX-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.AUX+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.AUX-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.HPD": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD0+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD0-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD1+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD1-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD2+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD2-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD3+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP.TXD3-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/DP{DP}": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD0+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD0-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD1+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD1-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD2+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD2-": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD3+": [
+   "100Ohm-diff"
+  ],
+  "/Front panel Video/TXD3-": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.RXCK+": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.RXCK-": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.RXD+": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.RXD-": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.TXCK+": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.TXCK-": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.TXD+": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B.TXD-": [
+   "100Ohm-diff"
+  ],
+  "/LTPI bias/DC_SCM_LTPI_B{LTPI}": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.CLK+": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.CLK-": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D0+": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D0-": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D1+": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D1-": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D2+": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D2-": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D3+": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI.D3-": [
+   "100Ohm-diff"
+  ],
+  "/LVDS to DP converter/DSI{DSI}": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.CLK+": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.CLK-": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D0+": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D0-": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D1+": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D1-": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D2+": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D2-": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D3+": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI.D3-": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/DSI{DSI}": [
+   "100Ohm-diff"
+  ],
+  "/OSM L/OSM_ETH_C.RX+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_ETH_C.RX-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_ETH_C.TX+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_ETH_C.TX-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_ETH_C{SGMII}": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_NC-SI.CRS_DV": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_NC-SI.REF_CLK": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_NC-SI.RXD0": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_NC-SI.RXD1": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_NC-SI.TXD0": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_NC-SI.TXD1": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_NC-SI.TX_EN": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_NC-SI{NC-SI}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_PCIe_A.RX0+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.RX0-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.RX1+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.RX1-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.RX2+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.RX2-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.RX3+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.RX3-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX0+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX0-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX1+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX1-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX2+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX2-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX3+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A.TX3-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_A{PCIE}": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX0+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX0-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX1+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX1-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX2+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX2-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX3+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.RX3-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX0+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX0-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX1+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX1-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX2+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX2-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX3+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B.TX3-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_PCIe_B{PCIE}": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_SPI_A.IO0": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_A.IO1": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_A.IO2": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_A.IO3": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_A.SCK": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_A.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_A.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_A{QSPI}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_B.DI": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_B.DO": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_B.SCK": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_B.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_B.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_B{SPI}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_C.DI": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_C.DO": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_C.SCK": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_C.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_C.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_SPI_C{SPI}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/OSM_USB_A.D+": [
+   "90Ohm-diff"
+  ],
+  "/OSM L/OSM_USB_A.D-": [
+   "90Ohm-diff"
+  ],
+  "/OSM L/OSM_USB_A{USB}": [
+   "90Ohm-diff"
+  ],
+  "/OSM L/OSM_USB_C_SS.RX+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_USB_C_SS.RX-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_USB_C_SS.TX+": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_USB_C_SS.TX-": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/OSM_USB_C_SS{USBSS}": [
+   "85Ohm-diff"
+  ],
+  "/OSM L/SDIO_B.CLK": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.CMD": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT0": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT1": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT2": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT3": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT4": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT5": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT6": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DAT7": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.DS": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.IOPWR": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.PWR_EN": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.WP": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B.~{CD}": [
+   "50Ohm-se"
+  ],
+  "/OSM L/SDIO_B{SDIO}": [
+   "50Ohm-se"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX0+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX0-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX1+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX1-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX2+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX2-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX3+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.RX3-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX0+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX0-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX1+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX1-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX2+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX2-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX3+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4.TX3-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/PCIE_x4{PCIE}": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/RX1+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/RX1-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/RX2+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/RX2-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/SGMII.RX+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/SGMII.RX-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/SGMII.TX+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/SGMII.TX-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/TX1+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/TX1-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/TX2+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - SGMII Mux/TX2-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX0+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX0-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX1+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX1-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX2+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX2-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX3+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.RX3-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX0+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX0-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX1+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX1-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX2+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX2-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX3+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE.TX3-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/PCIE{PCIE}": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/USB.RX+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/USB.RX-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/USB.TX+": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/USB.TX-": [
+   "85Ohm-diff"
+  ],
+  "/PCIe - USB Mux/USB{USBSS}": [
+   "85Ohm-diff"
+  ],
+  "/TPM Mux/TPM_SPI.DI": [
+   "50Ohm-se"
+  ],
+  "/TPM Mux/TPM_SPI.DO": [
+   "50Ohm-se"
+  ],
+  "/TPM Mux/TPM_SPI.SCK": [
+   "50Ohm-se"
+  ],
+  "/TPM Mux/TPM_SPI.~{CS0}": [
+   "50Ohm-se"
+  ],
+  "/TPM Mux/TPM_SPI.~{CS1}": [
+   "50Ohm-se"
+  ],
+  "/TPM Mux/TPM_SPI{SPI}": [
+   "50Ohm-se"
+  ],
+  "/USB Hub/USB_BYPASS.D+": [
+   "90Ohm-diff"
+  ],
+  "/USB Hub/USB_BYPASS.D-": [
+   "90Ohm-diff"
+  ]
+ },
+ "author": {
+  "via": [
+   0.45,
+   0.1
+  ],
+  "track": 0.125,
+  "track_min": 0.1,
+  "vias": 1355,
+  "via_sizes": [
+   [
+    [
+     0.45,
+     0.1
+    ],
+    1325
+   ],
+   [
+    [
+     0.55,
+     0.15
+    ],
+    21
+   ],
+   [
+    [
+     0.4,
+     0.1
+    ],
+    6
+   ],
+   [
+    [
+     0.5,
+     0.15
+    ],
+    3
+   ]
+  ]
+ }
+}
